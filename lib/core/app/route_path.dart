@@ -21,6 +21,12 @@ class Routers {
   ///[profilePage] page route.
   static const profilePage = 'profile';
 
+  static const libraryPage = 'library';
+
+  static const practicePage = 'practice';
+
+  static const levelPage = '/library/level';
+
   static const learnPage = 'learn';
 
   static const progressPage = 'progress';

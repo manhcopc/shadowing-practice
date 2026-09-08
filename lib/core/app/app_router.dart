@@ -4,8 +4,11 @@ import 'package:injectable/injectable.dart';
 
 import '../../modules/home/page/home_page.dart';
 import '../../modules/learn/learn_page.dart';
+import '../../modules/library/level_page.dart';
+import '../../modules/library/library_page.dart';
 import '../../modules/onboarding/onboarding_language_page.dart';
 import '../../modules/onboarding/onboarding_level_page.dart';
+import '../../modules/practice/practice_page.dart';
 import '../../modules/profile/pages/profile_page.dart';
 import '../../modules/progress/progress_page.dart';
 import '../../modules/courses/course_detail_page.dart';
@@ -41,12 +44,13 @@ class AppRouter extends RootStackRouter {
       path: Routers.mainScreen,
       children: [
         AutoRoute(page: HomeRoute.page, path: Routers.homePage),
-        AutoRoute(page: LearnRoute.page, path: Routers.learnPage),
-        AutoRoute(page: ProgressRoute.page, path: Routers.progressPage),
+        AutoRoute(page: LibraryRoute.page, path: Routers.libraryPage),
+        AutoRoute(page: PracticeRoute.page, path: Routers.practicePage),
         AutoRoute(page: ProfileRoute.page, path: Routers.profilePage),
       ],
     ),
 
+    AutoRoute(page: LevelRoute.page, path: Routers.levelPage),
     AutoRoute(
       page: OnboardingLanguageRoute.page,
       path: Routers.onboardingLanguage,

@@ -12,9 +12,10 @@ void main() {
     await Storage.setup();
   });
 
-  testWidgets('home loads continue learning content', (tester) async {
+  testWidgets('home loads shadow mvp content', (tester) async {
     await tester.pumpWidget(const MaterialApp(home: HomePage()));
-    expect(find.text('Continue learning'), findsOneWidget);
-    expect(find.text('Daily English'), findsOneWidget);
+    expect(find.text('Speak better.'), findsOneWidget);
+    expect(find.text("TODAY'S SHADOWING"), findsOneWidget);
+    expect(find.text('Keep Moving'), findsOneWidget);
   });
 }

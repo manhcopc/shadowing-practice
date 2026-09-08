@@ -154,6 +154,38 @@ class LessonPlayerRouteArgs {
 }
 
 /// generated route for
+/// [LevelPage]
+class LevelRoute extends PageRouteInfo<void> {
+  const LevelRoute({List<PageRouteInfo>? children})
+    : super(LevelRoute.name, initialChildren: children);
+
+  static const String name = 'LevelRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const LevelPage();
+    },
+  );
+}
+
+/// generated route for
+/// [LibraryPage]
+class LibraryRoute extends PageRouteInfo<void> {
+  const LibraryRoute({List<PageRouteInfo>? children})
+    : super(LibraryRoute.name, initialChildren: children);
+
+  static const String name = 'LibraryRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const LibraryPage();
+    },
+  );
+}
+
+/// generated route for
 /// [MainScreen]
 class MainRoute extends PageRouteInfo<void> {
   const MainRoute({List<PageRouteInfo>? children})
@@ -230,6 +262,22 @@ class OnboardingLevelRouteArgs {
 
   @override
   int get hashCode => key.hashCode ^ language.hashCode;
+}
+
+/// generated route for
+/// [PracticePage]
+class PracticeRoute extends PageRouteInfo<void> {
+  const PracticeRoute({List<PageRouteInfo>? children})
+    : super(PracticeRoute.name, initialChildren: children);
+
+  static const String name = 'PracticeRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const PracticePage();
+    },
+  );
 }
 
 /// generated route for

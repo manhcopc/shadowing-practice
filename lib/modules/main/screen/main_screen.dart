@@ -34,14 +34,10 @@ class _MainScreenState extends State<MainScreen> {
     ),
     _NavigationItem(
       index: 1,
-      label: 'Learn',
-      iconData: Icons.school_rounded,
+      label: 'Library',
+      iconData: Icons.menu_book_rounded,
     ),
-    _NavigationItem(
-      index: 2,
-      label: 'Progress',
-      iconData: Icons.bar_chart_rounded,
-    ),
+    _NavigationItem(index: 2, label: 'Practice', iconData: Icons.mic_rounded),
     _NavigationItem(
       index: 3,
       label: AppConstants.titleProfile,
@@ -59,7 +55,12 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return AutoTabsScaffold(
-      routes: const [HomeRoute(), LearnRoute(), ProgressRoute(), ProfileRoute()],
+      routes: const [
+        HomeRoute(),
+        LibraryRoute(),
+        PracticeRoute(),
+        ProfileRoute(),
+      ],
       bottomNavigationBuilder: _buildBottomNavigationBar,
     );
   }
@@ -147,7 +148,9 @@ class _MainScreenState extends State<MainScreen> {
     return BottomNavigationBarThemeData(
       backgroundColor: Colors.transparent,
       selectedItemColor: colorScheme.secondary,
-      unselectedItemColor: colorScheme.onSurface.withAlpha(_unselectedIconAlpha),
+      unselectedItemColor: colorScheme.onSurface.withAlpha(
+        _unselectedIconAlpha,
+      ),
       selectedLabelStyle: TextStyle(
         fontSize: _selectedLabelFontSize.sp,
         fontWeight: FontWeight.w600,
@@ -189,11 +192,7 @@ class _MainScreenState extends State<MainScreen> {
       );
     }
 
-    return Icon(
-      iconData ?? Icons.circle,
-      size: _iconSize.r,
-      color: color,
-    );
+    return Icon(iconData ?? Icons.circle, size: _iconSize.r, color: color);
   }
 
   // Getters - màu theo light/dark mode
@@ -212,9 +211,9 @@ class _NavigationItem {
     this.iconAsset,
     this.iconData,
   }) : assert(
-          iconAsset != null || iconData != null,
-          'Phải truyền iconAsset (SVG) hoặc iconData (Flutter)',
-        );
+         iconAsset != null || iconData != null,
+         'Phải truyền iconAsset (SVG) hoặc iconData (Flutter)',
+       );
 
   final int index;
   final String label;

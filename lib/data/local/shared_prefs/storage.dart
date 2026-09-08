@@ -29,6 +29,8 @@ class _Keys {
   static const echoRecentScores = 'echo_recent_scores';
   static const echoSentenceStats = 'echo_sentence_stats';
   static const echoPracticeDates = 'echo_practice_dates';
+  static const shadowMvpFavoritePassageIds =
+      'shadow_mvp_favorite_passage_ids';
 }
 
 class Storage {
@@ -276,4 +278,14 @@ class Storage {
 
   static Future<void> setEchoPracticeDates(List<String> val) =>
       _set(_Keys.echoPracticeDates, jsonEncode(val));
+
+  static List<String> get shadowMvpFavoritePassageIds {
+    final jsonString = _get<String>(_Keys.shadowMvpFavoritePassageIds);
+    if (jsonString == null) return [];
+    final decoded = jsonDecode(jsonString) as List<dynamic>;
+    return decoded.map((id) => id.toString()).toList();
+  }
+
+  static Future<void> setShadowMvpFavoritePassageIds(List<String> val) =>
+      _set(_Keys.shadowMvpFavoritePassageIds, jsonEncode(val));
 }
