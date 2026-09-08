@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ========================================================= -->
+    <!--  SHARED / GLOBAL (dùng cho cả Light & Dark)               -->
+    <!--  Dùng khi bạn muốn cùng một màu ở cả hai mode.            -->
+    <!--  Gợi ý:                                                   -->
+    <!--    - Màu thương hiệu (primary/secondary)                  -->
+    <!--    - Màu trạng thái (success/warning/error)               -->
+    <!--    - Màu overlay chữ/icon trên nền primary: on_primary    -->
+    <!--    - Màu gradient mặc định: gradient_*                     -->
+    <!-- ========================================================= -->
+
+    <color name="basic_dark">#000000</color>
+    <color name="basic_light">#FFFFFF</color>
+    <color name="primary">#14B8A6</color>
+    <color name="material_primary" type="material">#14B8A6</color>
+    <color name="secondary">#A78BFA</color>
+    <color name="material_secondary" type="material">#A78BFA</color>
+    <color name="neutral">#E6F0EE</color>
+    <color name="material_neutral" type="material">#E6F0EE</color>
+    <color name="success">#16A34A</color>
+    <color name="warning">#F59E0B</color>
+    <color name="error">#EF4444</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="gradient_primary_start">#5EEAD4</color>
+    <color name="gradient_primary_end">#14B8A6</color>
+    <color name="gradient_accent_start">#FFCDBE</color>
+    <color name="gradient_accent_end">#A78BFA</color>
+
+    <!-- ========================================================= -->
+    <!--  LIGHT MODE ONLY                                          -->
+    <!--  Map trong theme Light (values/themes.xml):               -->
+    <!--    <item name="android:colorBackground">@color/background_light</item>   -->
+    <!--    <item name="colorSurface">@color/surface_light</item>                 -->
+    <!--    <item name="android:textColorPrimary">@color/ink_light</item>        -->
+    <!--    <item name="android:textColor">@color/text_body_light</item>         -->
+    <!--  Sử dụng:                                                 -->
+    <!--    - background_*: nền app / màn                          -->
+    <!--    - surface_*: card/panel; border_*: viền/divider        -->
+    <!--    - ink_*: tiêu đề; text_body_*: nội dung dài            -->
+    <!--    - chip_*: badge/filter; *_light là màu riêng cho Light -->
+    <!-- ========================================================= -->
+    <color name="background_light">#F7FAF9</color>
+    <color name="surface_light">#FFFFFF</color>
+    <color name="surface_muted_light">#F7FAF9</color>
+    <color name="border_light">#E6F0EE</color>
+    <color name="ink_light">#0F766E</color>
+    <color name="text_body_light">#2B3A38</color>
+    <color name="primary_300_light">#5EEAD4</color>
+    <color name="accent_peach_light">#FFCDBE</color>
+    <color name="chip_bg_light">#FFFFFF</color>
+    <color name="chip_selected_bg_light">#14B8A6</color>
+    <color name="chip_selected_text_light">#FFFFFF</color>
+    <color name="gradient_primary_start_light">#5EEAD4</color>
+    <color name="gradient_primary_end_light">#14B8A6</color>
+    <color name="gradient_accent_start_light">#FFCDBE</color>
+    <color name="gradient_accent_end_light">#A78BFA</color>
+
+    <!-- ========================================================= -->
+    <!--  DARK MODE ONLY                                           -->
+    <!--  Map trong theme Night (values-night/themes.xml):         -->
+    <!--    <item name="android:colorBackground">@color/background_dark</item>   -->
+    <!--    <item name="colorSurface">@color/surface_dark</item>                 -->
+    <!--    <item name="android:textColorPrimary">@color/ink_dark</item>         -->
+    <!--    <item name="android:textColor">@color/text_body_dark</item>          -->
+    <!--  Lưu ý: giữ tương phản >= 4.5:1 cho body text             -->
+    <!-- ========================================================= -->
+    <color name="background_dark">#0C1211</color>
+    <color name="surface_dark">#101615</color>
+    <color name="surface_muted_dark">#0F1B19</color>
+    <color name="border_dark">#16302D</color>
+    <color name="ink_dark">#EAF6F3</color>
+    <color name="text_body_dark">#CDE7E3</color>
+    <color name="primary_300_dark">#5EEAD4</color>
+    <color name="accent_peach_dark">#FFD6C9</color>
+    <color name="chip_bg_dark">#101615</color>
+    <color name="chip_selected_bg_dark">#14B8A6</color>
+    <color name="chip_selected_text_dark">#FFFFFF</color>
+    <color name="gradient_primary_start_dark">#0FBDAA</color>
+    <color name="gradient_primary_end_dark">#0B8E83</color>
+    <color name="gradient_accent_start_dark">#FFD6C9</color>
+    <color name="gradient_accent_end_dark">#A78BFA</color>
+
+    <!-- =================== SAMPLE MAPPING ======================= -->
+    <!--  values/themes.xml (Light)                                -->
+    <!--  <style name="Theme.SkinMate" parent="Theme.Material3.Light.NoActionBar"> -->
+    <!--    <item name="colorPrimary">@color/primary</item>                       -->
+    <!--    <item name="colorOnPrimary">@color/on_primary</item>                  -->
+    <!--    <item name="android:colorBackground">@color/background_light</item>   -->
+    <!--    <item name="colorSurface">@color/surface_light</item>                 -->
+    <!--  </style>                                                                  -->
+    <!--                                                                            -->
+    <!--  values-night/themes.xml (Dark)                                            -->
+    <!--  <style name="Theme.SkinMate" parent="Theme.Material3.Dark.NoActionBar">-->
+    <!--    <item name="android:colorBackground">@color/background_dark</item>    -->
+    <!--    <item name="colorSurface">@color/surface_dark</item>                  -->
+    <!--  </style>                                                                  -->
+    <!-- ========================================================= -->
+</resources>

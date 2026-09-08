@@ -1,0 +1,2120 @@
+{
+  "@@locale": "en",
+  "login": "Login",
+  "@login": {
+    "description": "Login button text"
+  },
+  "logout": "Logout",
+  "@logout": {
+    "description": "Logout button text"
+  },
+  "email": "Email",
+  "@email": {
+    "description": "Email field label"
+  },
+  "password": "Password",
+  "@password": {
+    "description": "Password field label"
+  },
+  "error": "Error",
+  "@error": {
+    "description": "Generic error text"
+  },
+  "error_network": "Network error!",
+  "@error_network": {
+    "description": "Network connection error message"
+  },
+  "error_unexpected": "Something went wrong!",
+  "@error_unexpected": {
+    "description": "Unexpected error message"
+  },
+  "error_unauthorized": "Unauthorized!",
+  "@error_unauthorized": {
+    "description": "Unauthorized access error message"
+  },
+  "error_invalid_email": "Invalid email",
+  "@error_invalid_email": {
+    "description": "Invalid email format error message"
+  },
+  "error_invalid_password": "Your password must be at least 8 characters including a lowercase letter, an uppercase letter, and a number",
+  "@error_invalid_password": {
+    "description": "Invalid password format error message"
+  },
+  "error_internal_server": "Internal Server Error",
+  "@error_internal_server": {
+    "description": "Internal server error message"
+  },
+  "ok": "OK",
+  "@ok": {
+    "description": "OK button text"
+  },
+  "confirm": "Confirm",
+  "@confirm": {
+    "description": "Confirm button text"
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Cancel button text"
+  },
+  "buttonOpenSettings": "Open Settings",
+  "@buttonOpenSettings": {
+    "description": "Open Settings button text"
+  },
+  "hello": "Hello, {name}",
+  "@hello": {
+    "description": "Greeting message with user name",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "counter": "Counter",
+  "@counter": {
+    "description": "Counter screen title"
+  },
+  "settings": "Settings",
+  "@settings": {
+    "description": "Settings screen title"
+  },
+  "language": "Language",
+  "@language": {
+    "description": "Language setting label"
+  },
+  "about": "About",
+  "@about": {
+    "description": "About screen title"
+  },
+  "terms_conditions": "Terms & Conditions",
+  "@terms_conditions": {
+    "description": "Terms and conditions label"
+  },
+  "privacy_policies": "Privacy Policies",
+  "@privacy_policies": {
+    "description": "Privacy policies label"
+  },
+  "version_x": "Version {version}",
+  "@version_x": {
+    "description": "Version display text",
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "security": "Security",
+  "@security": {
+    "description": "Security settings section"
+  },
+  "app_passcode": "App Passcode",
+  "@app_passcode": {
+    "description": "App passcode setting label"
+  },
+  "change_passcode": "Change Passcode",
+  "@change_passcode": {
+    "description": "Change passcode button text"
+  },
+  "english": "English",
+  "@english": {
+    "description": "English language name"
+  },
+  "vietnamese": "Tiếng Việt",
+  "@vietnamese": {
+    "description": "Vietnamese language name"
+  },
+  "select_language": "Select Language",
+  "@select_language": {
+    "description": "Select language dialog title"
+  },
+  "change_language": "Change Language",
+  "@change_language": {
+    "description": "Change language button text"
+  },
+  "retry": "Retry",
+  "@retry": {
+    "description": "Retry button text"
+  },
+  "tried": "Tried",
+  "@tried": {
+    "description": "Tried status label"
+  },
+  "favorite": "Favorite",
+  "@favorite": {
+    "description": "Favorite action label"
+  },
+  "favorites": "Favorites",
+  "@favorites": {
+    "description": "Favorites section title"
+  },
+  "no_favorites": "No favorites yet",
+  "@no_favorites": {
+    "description": "Empty favorites message"
+  },
+  "tap_heart_to_add_favorites": "Tap the heart to add your favorite positions",
+  "@tap_heart_to_add_favorites": {
+    "description": "Instruction for adding favorites"
+  },
+  "no_positions_found": "No positions found",
+  "@no_positions_found": {
+    "description": "No search results message"
+  },
+  "loading": "Loading...",
+  "@loading": {
+    "description": "Loading indicator text"
+  },
+  "search": "Search",
+  "@search": {
+    "description": "Search field placeholder"
+  },
+  "all_positions": "All Positions",
+  "@all_positions": {
+    "description": "All positions filter label"
+  },
+  "app_title": "69 POSITIONS",
+  "@app_title": {
+    "description": "Application title"
+  },
+  "explore": "EXPLORE",
+  "@explore": {
+    "description": "Explore section title"
+  },
+  "your_progress": "Your progress:",
+  "@your_progress": {
+    "description": "Progress section label"
+  },
+  "positions_completed": "{completed} / {total} positions completed",
+  "@positions_completed": {
+    "description": "Progress completion text",
+    "placeholders": {
+      "completed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "error_with_message": "Error: {message}",
+  "@error_with_message": {
+    "description": "Error message with details",
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "removed_from_tried": "Removed from Tried",
+  "@removed_from_tried": {
+    "description": "Removed from tried list message"
+  },
+  "marked_as_tried": "Marked as Tried",
+  "@marked_as_tried": {
+    "description": "Marked as tried message"
+  },
+  "removed_from_favorites": "Removed from Favorites",
+  "@removed_from_favorites": {
+    "description": "Removed from favorites message"
+  },
+  "added_to_favorites": "Added to Favorites",
+  "@added_to_favorites": {
+    "description": "Added to favorites message"
+  },
+  "failed_to_load_position": "Failed to load position details.",
+  "@failed_to_load_position": {
+    "description": "Position loading error message"
+  },
+  "mark_tried": "Mark Tried",
+  "@mark_tried": {
+    "description": "Mark as tried button text"
+  },
+  "favorited": "Favorited",
+  "@favorited": {
+    "description": "Favorited status label"
+  },
+  "your_favorites": "YOUR FAVORITES",
+  "@your_favorites": {
+    "description": "Favorites section header"
+  },
+  "explore_positions": "Explore positions",
+  "@explore_positions": {
+    "description": "Explore positions button text"
+  },
+  "feeling_lucky": "Feeling lucky?",
+  "@feeling_lucky": {
+    "description": "Feeling lucky prompt"
+  },
+  "set_tried": "Set Tried",
+  "@set_tried": {
+    "description": "Set tried status button text"
+  },
+  "support": "Support",
+  "@support": {
+    "description": "Support section title"
+  },
+  "rate_app": "Rate App",
+  "@rate_app": {
+    "description": "Rate app button text"
+  },
+  "contact_us": "Contact Us",
+  "@contact_us": {
+    "description": "Contact us button text"
+  },
+  "titleMainScreen": "Main Screen",
+  "@titleMainScreen": {
+    "description": "Main screen title"
+  },
+  "titleRateApp": "Rate this app",
+  "@titleRateApp": {
+    "description": "Rate app dialog title"
+  },
+  "messageRateApp": "You like this app? Then take a little bit of your time to leave a rating:",
+  "@messageRateApp": {
+    "description": "Rate app dialog message"
+  },
+  "buttonOk": "OK",
+  "@buttonOk": {
+    "description": "OK button text"
+  },
+  "titleNoInternet": "No Internet Connection",
+  "@titleNoInternet": {
+    "description": "No internet dialog title"
+  },
+  "messageNoInternet": "Please check your internet connection and try again later",
+  "@messageNoInternet": {
+    "description": "No internet dialog message"
+  },
+  "messageInternetRestored": "Internet connection restored",
+  "@messageInternetRestored": {
+    "description": "Internet restored message"
+  },
+  "messageLoading": "Loading...",
+  "@messageLoading": {
+    "description": "Loading message"
+  },
+  "exit": "Exit",
+  "@exit": {
+    "description": "Exit button text"
+  },
+  "errorGeneral": "An error occurred",
+  "@errorGeneral": {
+    "description": "General error message"
+  },
+  "backToLogin": "Back to Login",
+  "@backToLogin": {
+    "description": "Back to login button text"
+  },
+  "pleaseCheckEmail": "Please check your email",
+  "@pleaseCheckEmail": {
+    "description": "Please check your email text"
+  },
+  "confirmAccountRegistration": "Confirm account registration",
+  "@confirmAccountRegistration": {
+    "description": "Confirm account registration text"
+  },
+  "welcomeTitle": "Scan a product, see if it's right for you.",
+  "@welcomeTitle": {
+    "description": "Welcome screen main title"
+  },
+  "welcomeSubtitle": "Let's get started finding products that will work for your skin.",
+  "@welcomeSubtitle": {
+    "description": "Welcome screen subtitle"
+  },
+  "continueWithApple": "Continue with Apple",
+  "@continueWithApple": {
+    "description": "Continue with Apple button text"
+  },
+  "continueWithGoogle": "Continue with Google",
+  "@continueWithGoogle": {
+    "description": "Continue with Google button text"
+  },
+  "continueWithEmail": "Continue with Email",
+  "@continueWithEmail": {
+    "description": "Continue with Email button text"
+  },
+  "switchToLightMode": "Switch to light mode",
+  "@switchToLightMode": {
+    "description": "Tooltip for switch to light mode button"
+  },
+  "switchToDarkMode": "Switch to dark mode",
+  "@switchToDarkMode": {
+    "description": "Tooltip for switch to dark mode button"
+  },
+  "period_week": "Week",
+  "@period_week": {
+    "description": "Week period label (singular)"
+  },
+  "period_month": "Month",
+  "@period_month": {
+    "description": "Month period label (singular)"
+  },
+  "period_year": "Year",
+  "@period_year": {
+    "description": "Year period label (singular)"
+  },
+  "period_period": "Period",
+  "@period_period": {
+    "description": "Generic period label for default case"
+  },
+  "period_weeks": "{count} Weeks",
+  "@period_weeks": {
+    "description": "Weeks period label with count (plural)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "period_months": "{count} Months",
+  "@period_months": {
+    "description": "Months period label with count (plural)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "period_years": "{count} Years",
+  "@period_years": {
+    "description": "Years period label with count (plural)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "period_days": "{count} Days",
+  "@period_days": {
+    "description": "Days period label with count (plural)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "period_day": "Day",
+  "@period_day": {
+    "description": "Day period label (singular)"
+  },
+  "purchase_payment_failed": "Payment failed: {message}",
+  "@purchase_payment_failed": {
+    "description": "Payment failed error message with details",
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "purchase_not_logged_in": "Please log in to make a purchase",
+  "@purchase_not_logged_in": {
+    "description": "Error message when user is not logged in for purchase"
+  },
+  "purchase_verification_failed": "Purchase verification failed: {error}",
+  "@purchase_verification_failed": {
+    "description": "Purchase verification failed error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "purchase_server_verification_failed": "Server verification failed: {error}",
+  "@purchase_server_verification_failed": {
+    "description": "Server verification failed error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "purchase_binding_check_error": "Device binding check failed: {error}",
+  "@purchase_binding_check_error": {
+    "description": "Device binding check failed error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "purchase_no_products": "No products available",
+  "@purchase_no_products": {
+    "description": "Error message when no products are available"
+  },
+  "purchase_load_products_error": "Failed to load products: {error}",
+  "@purchase_load_products_error": {
+    "description": "Failed to load products error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "purchase_store_unavailable": "Store is currently unavailable",
+  "@purchase_store_unavailable": {
+    "description": "Store unavailable error message"
+  },
+  "purchase_error": "Purchase error: {error}",
+  "@purchase_error": {
+    "description": "Generic purchase error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "purchase_product_not_found": "Product not found",
+  "@purchase_product_not_found": {
+    "description": "Product not found error message"
+  },
+  "plan_weekly_premium": "Weekly Premium",
+  "@plan_weekly_premium": {
+    "description": "Weekly premium plan title"
+  },
+  "plan_monthly_premium": "Monthly Premium",
+  "@plan_monthly_premium": {
+    "description": "Monthly premium plan title"
+  },
+  "plan_yearly_premium": "Yearly Premium",
+  "@plan_yearly_premium": {
+    "description": "Yearly premium plan title"
+  },
+  "plan_premium_plan": "Premium Plan",
+  "@plan_premium_plan": {
+    "description": "Generic premium plan title"
+  },
+  "plan_loading": "Loading...",
+  "@plan_loading": {
+    "description": "Loading text for plan information"
+  },
+  "plan_free_trial": "Free trial",
+  "@plan_free_trial": {
+    "description": "Free trial indicator text"
+  },
+  "plan_per_week": " per week",
+  "@plan_per_week": {
+    "description": "Per week pricing suffix"
+  },
+  "plan_vnd_per_week": " VND/week",
+  "@plan_vnd_per_week": {
+    "description": "Vietnamese Dong per week pricing suffix"
+  },
+  "binding_device_linked": "Device Already Linked",
+  "@binding_device_linked": {
+    "description": "Title for device binding dialog when device is already linked"
+  },
+  "binding_device_linked_description": "This device is already linked to another account. To purchase premium features, please switch to the linked account or contact support.",
+  "@binding_device_linked_description": {
+    "description": "Description text explaining device binding conflict"
+  },
+  "binding_purchase_instructions": "To complete your purchase:",
+  "@binding_purchase_instructions": {
+    "description": "Instructions header for purchase process"
+  },
+  "binding_switch_account": "Switch to the linked account ({linkedAccount})",
+  "@binding_switch_account": {
+    "description": "Instruction to switch to linked account",
+    "placeholders": {
+      "linkedAccount": {
+        "type": "String"
+      }
+    }
+  },
+  "binding_contact_support": "Contact support for assistance",
+  "@binding_contact_support": {
+    "description": "Instruction to contact support"
+  },
+  "binding_cancel": "Cancel",
+  "@binding_cancel": {
+    "description": "Cancel button text in binding dialog"
+  },
+  "binding_understood": "Understood",
+  "@binding_understood": {
+    "description": "Understood button text in binding dialog"
+  },
+  "premium_processing_payment": "Processing payment...",
+  "@premium_processing_payment": {
+    "description": "Toast message when processing payment"
+  },
+  "premium_verifying_payment": "Verifying payment...",
+  "@premium_verifying_payment": {
+    "description": "Toast message when verifying payment"
+  },
+  "premium_purchase_success": "Purchase successful!",
+  "@premium_purchase_success": {
+    "description": "Toast message for successful purchase"
+  },
+  "premium_transaction_cancelled": "Transaction cancelled",
+  "@premium_transaction_cancelled": {
+    "description": "Toast message for cancelled transaction"
+  },
+  "premium_get_pro_access": "Get Pro Access",
+  "@premium_get_pro_access": {
+    "description": "Main title for premium subscription screen"
+  },
+  "premium_unlock_features": "Unlock all premium features for your skin analysis journey",
+  "@premium_unlock_features": {
+    "description": "Subtitle describing premium benefits"
+  },
+  "premium_ai_dermatologist": "AI Dermatologist",
+  "@premium_ai_dermatologist": {
+    "description": "Premium feature title - AI dermatologist"
+  },
+  "premium_instant_analysis": "Get instant skin analysis and personalized recommendations",
+  "@premium_instant_analysis": {
+    "description": "Premium feature description - instant analysis"
+  },
+  "premium_unlimited_scanning": "Unlimited Scanning",
+  "@premium_unlimited_scanning": {
+    "description": "Premium feature title - unlimited scanning"
+  },
+  "premium_scan_anywhere": "Scan anywhere, anytime with unlimited access",
+  "@premium_scan_anywhere": {
+    "description": "Premium feature description - unlimited access"
+  },
+  "premium_loading_subscriptions": "Loading subscription plans...",
+  "@premium_loading_subscriptions": {
+    "description": "Loading text for subscription plans"
+  },
+  "premium_unable_to_load": "Unable to load subscription plans",
+  "@premium_unable_to_load": {
+    "description": "Error message when unable to load plans"
+  },
+  "premium_try_again": "Try Again",
+  "@premium_try_again": {
+    "description": "Try again button text"
+  },
+  "premium_free_trial": "Free Trial Available",
+  "@premium_free_trial": {
+    "description": "Free trial indicator text"
+  },
+  "premium_trial_description": "Start your premium experience with a free trial period",
+  "@premium_trial_description": {
+    "description": "Free trial description text"
+  },
+  "premium_continue": "Continue",
+  "@premium_continue": {
+    "description": "Continue button text for subscription"
+  },
+  "premium_restore": "Restore",
+  "@premium_restore": {
+    "description": "Restore purchases footer link"
+  },
+  "premium_terms": "Terms",
+  "@premium_terms": {
+    "description": "Terms of service footer link"
+  },
+  "premium_privacy": "Privacy",
+  "@premium_privacy": {
+    "description": "Privacy policy footer link"
+  },
+  "premium_feature_coming_soon": "{feature} coming soon",
+  "@premium_feature_coming_soon": {
+    "description": "Coming soon message for unavailable features",
+    "placeholders": {
+      "feature": {
+        "type": "String"
+      }
+    }
+  },
+  "premium_best_offer": "Best Offer",
+  "@premium_best_offer": {
+    "description": "Badge text for best offer plan"
+  },
+  "premium_popular": "Popular",
+  "@premium_popular": {
+    "description": "Badge text for popular plan"
+  },
+  "premium_save_65_percent": "Save 65%",
+  "@premium_save_65_percent": {
+    "description": "Savings description for yearly plan"
+  },
+  "premium_flexible_billing": "Flexible billing",
+  "@premium_flexible_billing": {
+    "description": "Description for weekly plan"
+  },
+  "premium_features_included": "All premium features included",
+  "@premium_features_included": {
+    "description": "Description for one-time purchase"
+  },
+  "premium_current_account": "Current Account",
+  "@premium_current_account": {
+    "description": "Label for current account in binding dialog"
+  },
+  "signIn": "Sign In",
+  "@signIn": {
+    "description": "Sign In button"
+  },
+  "signUp": "Sign Up",
+  "@signUp": {
+    "description": "Sign Up button"
+  },
+  "loginToApp": "Login to {appName}",
+  "@loginToApp": {
+    "description": "Login title with app name",
+    "placeholders": {
+      "appName": {
+        "type": "String"
+      }
+    }
+  },
+  "welcomeBackMessage": "Welcome back! Please login to your account",
+  "@welcomeBackMessage": {
+    "description": "Welcome message for login screen"
+  },
+  "forgotPassword": "Forgot password?",
+  "@forgotPassword": {
+    "description": "Forgot password link"
+  },
+  "dontHaveAccount": "Don't have an account?",
+  "@dontHaveAccount": {
+    "description": "Question to switch to sign up"
+  },
+  "signUpToApp": "Sign up to {appName}",
+  "@signUpToApp": {
+    "description": "Sign up title with app name",
+    "placeholders": {
+      "appName": {
+        "type": "String"
+      }
+    }
+  },
+  "welcomeSignUpMessage": "Welcome! Please enter your details",
+  "@welcomeSignUpMessage": {
+    "description": "Welcome message for sign up screen"
+  },
+  "fullName": "Full Name",
+  "@fullName": {
+    "description": "Full name field label"
+  },
+  "alreadyHaveAccount": "Already have an account?",
+  "@alreadyHaveAccount": {
+    "description": "Question to switch to sign in"
+  },
+  "enterEmailToResetPassword": "Enter the email associated with your account and we'll send an email with instructions to reset your password.",
+  "@enterEmailToResetPassword": {
+    "description": "Description of how to reset password"
+  },
+  "sendOtp": "Send OTP",
+  "@sendOtp": {
+    "description": "Send OTP button"
+  },
+  "otpSentToEmail": "We sent you 6-digit code to your email address",
+  "@otpSentToEmail": {
+    "description": "Notification that OTP was sent"
+  },
+  "otpResent": "OTP resent",
+  "@otpResent": {
+    "description": "Notification that OTP was resent"
+  },
+  "otpVerifiedSuccessfully": "OTP verified successfully",
+  "@otpVerifiedSuccessfully": {
+    "description": "OTP verification success notification"
+  },
+  "enterSixDigitCode": "Please enter the 6-digit code",
+  "@enterSixDigitCode": {
+    "description": "OTP entry screen title"
+  },
+  "enterOtp": "Enter OTP",
+  "@enterOtp": {
+    "description": "OTP field label"
+  },
+  "resendOtpIn": "Resend OTP in",
+  "@resendOtpIn": {
+    "description": "Countdown text for resend OTP"
+  },
+  "resendOtp": "Resend OTP",
+  "@resendOtp": {
+    "description": "Resend OTP button"
+  },
+  "continueText": "Continue",
+  "@continueText": {
+    "description": "Continue button"
+  },
+  "verifyOtp": "Verify OTP",
+  "@verifyOtp": {
+    "description": "OTP verification screen title"
+  },
+  "createNewPassword": "Create New Password",
+  "@createNewPassword": {
+    "description": "New password creation screen title"
+  },
+  "passwordMustBeDifferent": "Your new password must be different from previous used passwords",
+  "@passwordMustBeDifferent": {
+    "description": "New password requirement description"
+  },
+  "confirmNewPassword": "Confirm New Password",
+  "@confirmNewPassword": {
+    "description": "Confirm new password field label"
+  },
+  "resetPassword": "Reset Password",
+  "@resetPassword": {
+    "description": "Reset password button"
+  },
+  "passwordResetSuccessfully": "Password reset successfully",
+  "@passwordResetSuccessfully": {
+    "description": "Password reset success notification"
+  },
+  "passwordResetNote": "Note: It may take a few minutes for the password reset email to reach your inbox. If it doesn't appear, please look in your spam folders. Keep in mind that only the most recent password reset link you requested will remain valid.",
+  "@passwordResetNote": {
+    "description": "Note about receiving password reset email"
+  },
+  "loginSuccess": "Login successful",
+  "@loginSuccess": {
+    "description": "Login success notification"
+  },
+  "signUpSuccess": "Sign up successful",
+  "@signUpSuccess": {
+    "description": "Sign up success notification"
+  },
+  "myProfile": "My Profile",
+  "@myProfile": {
+    "description": "Profile screen title"
+  },
+  "followers": "Followers",
+  "@followers": {
+    "description": "Followers label"
+  },
+  "following": "Following",
+  "@following": {
+    "description": "Following label"
+  },
+  "skinType": "Skin type",
+  "@skinType": {
+    "description": "Skin type label"
+  },
+  "skinConcerns": "Skin concerns",
+  "@skinConcerns": {
+    "description": "Skin concerns label"
+  },
+  "utilitiesRoutine": "Utilities's Routine",
+  "@utilitiesRoutine": {
+    "description": "Skincare routine title"
+  },
+  "skinTypeDry": "Dry",
+  "@skinTypeDry": {
+    "description": "Dry skin type"
+  },
+  "skinConcernRedness": "redness",
+  "@skinConcernRedness": {
+    "description": "Redness skin concern"
+  },
+  "skinConcernAcne": "acne",
+  "@skinConcernAcne": {
+    "description": "Acne skin concern"
+  },
+  "account": "Account",
+  "@account": {
+    "description": "Account section label"
+  },
+  "profile": "Profile",
+  "@profile": {
+    "description": "Profile label"
+  },
+  "yourSkin": "Your Skin",
+  "@yourSkin": {
+    "description": "Your skin label"
+  },
+  "productPreferences": "Product Preferences",
+  "@productPreferences": {
+    "description": "Product preferences label"
+  },
+  "avoidedIngredients": "Avoided Ingredients",
+  "@avoidedIngredients": {
+    "description": "Avoided ingredients label"
+  },
+  "likedIngredients": "Liked Ingredients",
+  "@likedIngredients": {
+    "description": "Liked ingredients label"
+  },
+  "holyGrails": "Holy Grails",
+  "@holyGrails": {
+    "description": "Holy grails label"
+  },
+  "socialMedia": "Social Media",
+  "@socialMedia": {
+    "description": "Social media label"
+  },
+  "emailPreferences": "Email Preferences",
+  "@emailPreferences": {
+    "description": "Email preferences label"
+  },
+  "pushNotifications": "Push Notifications",
+  "@pushNotifications": {
+    "description": "Push notifications label"
+  },
+  "legal": "Legal",
+  "@legal": {
+    "description": "Legal section label"
+  },
+  "privacyPolicy": "Privacy Policy",
+  "@privacyPolicy": {
+    "description": "Privacy policy label"
+  },
+  "termsOfService": "Terms of Service",
+  "@termsOfService": {
+    "description": "Terms of service label"
+  },
+  "contactUs": "Contact Us",
+  "@contactUs": {
+    "description": "Contact us label"
+  },
+  "rateUs": "Rate Us",
+  "@rateUs": {
+    "description": "Rate app label"
+  },
+  "theme": "Theme",
+  "@theme": {
+    "description": "Theme section label"
+  },
+  "darkMode": "Dark Mode",
+  "@darkMode": {
+    "description": "Dark mode label"
+  },
+  "lightMode": "Light Mode",
+  "@lightMode": {
+    "description": "Light mode label"
+  },
+  "changeLanguage": "Change Language",
+  "@changeLanguage": {
+    "description": "Change language label"
+  },
+  "currentLanguage": "Current language",
+  "@currentLanguage": {
+    "description": "Current language label"
+  },
+  "editProfile": "Edit Profile",
+  "@editProfile": {
+    "description": "Edit profile label"
+  },
+  "changePassword": "Change Password",
+  "@changePassword": {
+    "description": "Change password label"
+  },
+  "deleteAccount": "Delete Account",
+  "@deleteAccount": {
+    "description": "Delete account label"
+  },
+  "choosePhotoSource": "Choose Photo Source",
+  "@choosePhotoSource": {
+    "description": "Title for photo source selection bottom sheet"
+  },
+  "selectWhereToTakePhoto": "Select where to take photo",
+  "@selectWhereToTakePhoto": {
+    "description": "Description for photo source selection"
+  },
+  "takeNewPhoto": "Take a New Photo",
+  "@takeNewPhoto": {
+    "description": "Button to take photo from camera"
+  },
+  "openYourGallery": "Open Your Gallery",
+  "@openYourGallery": {
+    "description": "Button to open photo gallery"
+  },
+  "back": "Back",
+  "@back": {
+    "description": "Back button"
+  },
+  "errorAccessingCamera": "Unable to access camera",
+  "@errorAccessingCamera": {
+    "description": "Error message for camera access"
+  },
+  "errorAccessingGallery": "Unable to access gallery",
+  "@errorAccessingGallery": {
+    "description": "Error message for gallery access"
+  },
+  "errorSelectImage": "Failed to select image. Please try again.",
+  "@errorSelectImage": {
+    "description": "Error message for image selection failure"
+  },
+  "editProfile": "Edit Profile",
+  "@editProfile": {
+    "description": "Edit profile title"
+  },
+  "profileUpdatedSuccessfully": "Profile updated successfully!",
+  "@profileUpdatedSuccessfully": {
+    "description": "Profile update success message"
+  },
+  "updateProfileFailed": "Update profile failed: {message}",
+  "@updateProfileFailed": {
+    "description": "Profile update failure message",
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "unknownPlayer": "UNKNOWN PLAYER",
+  "@unknownPlayer": {
+    "description": "Default player name"
+  },
+  "displayName": "Display Name",
+  "@displayName": {
+    "description": "Display name label"
+  },
+  "enterDisplayName": "Enter your display name",
+  "@enterDisplayName": {
+    "description": "Display name hint"
+  },
+  "username": "Username",
+  "@username": {
+    "description": "Username label"
+  },
+  "enterUsername": "Enter your username",
+  "@enterUsername": {
+    "description": "Username hint"
+  },
+  "phone": "Phone",
+  "@phone": {
+    "description": "Phone label"
+  },
+  "enterPhoneNumber": "Enter your phone number",
+  "@enterPhoneNumber": {
+    "description": "Phone number hint"
+  },
+  "gender": "Gender",
+  "@gender": {
+    "description": "Gender label"
+  },
+  "selectGender": "Select Gender",
+  "@selectGender": {
+    "description": "Gender selection hint"
+  },
+  "male": "Male",
+  "@male": {
+    "description": "Male gender"
+  },
+  "female": "Female",
+  "@female": {
+    "description": "Female gender"
+  },
+  "other": "Other",
+  "@other": {
+    "description": "Other gender"
+  },
+  "saveProfile": "SAVE PROFILE",
+  "@saveProfile": {
+    "description": "Save profile button"
+  },
+  "changePasswordDescription": "To change your password, please enter your current password and new password",
+  "@changePasswordDescription": {
+    "description": "Change password description"
+  },
+  "changePasswordSuccess": "Password changed successfully",
+  "@changePasswordSuccess": {
+    "description": "Change password success notification"
+  },
+  "currentPassword": "Current Password",
+  "@currentPassword": {
+    "description": "Current password label"
+  },
+  "newPassword": "New Password",
+  "@newPassword": {
+    "description": "New password label"
+  },
+  "confirmPassword": "Confirm Password",
+  "@confirmPassword": {
+    "description": "Confirm password label"
+  },
+  "reset": "Reset",
+  "@reset": {
+    "description": "Reset button"
+  },
+  "deleteAccountConfirmTitle": "Are you sure?",
+  "@deleteAccountConfirmTitle": {
+    "description": "Delete account confirmation title"
+  },
+  "deleteAccountConfirmMessage": "If you delete your account, you won't be able to log in with it anymore. Are you sure you want to continue?",
+  "@deleteAccountConfirmMessage": {
+    "description": "Delete account confirmation message"
+  },
+  "deleteAccountSuccess": "Account deleted successfully",
+  "@deleteAccountSuccess": {
+    "description": "Account deletion success message"
+  },
+  "deleteAccountFailed": "Account deletion failed: {message}",
+  "@deleteAccountFailed": {
+    "description": "Account deletion failure message",
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "feedNoPosts": "No posts available",
+  "@feedNoPosts": {
+    "description": "Message when feed has no posts"
+  },
+  "feedPostCreatedSuccess": "Post created successfully",
+  "@feedPostCreatedSuccess": {
+    "description": "Success message for post creation"
+  },
+  "feedPostUpdatedSuccess": "Post updated successfully",
+  "@feedPostUpdatedSuccess": {
+    "description": "Success message for post update"
+  },
+  "feedPostDeletedSuccess": "Post deleted successfully",
+  "@feedPostDeletedSuccess": {
+    "description": "Success message for post deletion"
+  },
+  "feedCreatingPost": "Creating post...",
+  "@feedCreatingPost": {
+    "description": "Message shown while creating a post"
+  },
+  "feedUnknownUser": "Unknown",
+  "@feedUnknownUser": {
+    "description": "Default username when user is unknown"
+  },
+  "feedCommentEdit": "Edit",
+  "@feedCommentEdit": {
+    "description": "Edit comment button"
+  },
+  "feedCommentDelete": "Delete",
+  "@feedCommentDelete": {
+    "description": "Delete comment button"
+  },
+  "feedCommentDeleteTitle": "Delete Comment",
+  "@feedCommentDeleteTitle": {
+    "description": "Title for delete comment dialog"
+  },
+  "feedCommentDeleteConfirm": "Are you sure you want to delete this comment?",
+  "@feedCommentDeleteConfirm": {
+    "description": "Confirmation message for comment deletion"
+  },
+  "feedCommentDeletedSuccess": "Comment deleted successfully",
+  "@feedCommentDeletedSuccess": {
+    "description": "Success message for comment deletion"
+  },
+  "feedCommentInputHint": "Write a comment...",
+  "@feedCommentInputHint": {
+    "description": "Hint text for comment input"
+  },
+  "feedCommentsTitle": "Comments ({count})",
+  "@feedCommentsTitle": {
+    "description": "Title for comments list with count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "feedCommentsEmpty": "No comments yet",
+  "@feedCommentsEmpty": {
+    "description": "Message when there are no comments"
+  },
+  "feedCommentShowReplies": "View {count} replies",
+  "@feedCommentShowReplies": {
+    "description": "Button to show replies",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "feedCommentHideReplies": "Hide replies",
+  "@feedCommentHideReplies": {
+    "description": "Button to hide replies"
+  },
+  "feedCommentReply": "Reply",
+  "@feedCommentReply": {
+    "description": "Button to reply to comment"
+  },
+  "feedCommentLoadMoreReplies": "View {count} more replies",
+  "@feedCommentLoadMoreReplies": {
+    "description": "Button to load more replies",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "feedCommentOptions": "Comment Options",
+  "@feedCommentOptions": {
+    "description": "Comment options bottom sheet title"
+  },
+  "feedCommentReplyingTo": "Replying to",
+  "@feedCommentReplyingTo": {
+    "description": "Text shown when replying to a comment"
+  },
+  "feedCommentEditing": "Editing comment",
+  "@feedCommentEditing": {
+    "description": "Text shown when editing a comment"
+  },
+  "feedCreatePost": "Create Post",
+  "@feedCreatePost": {
+    "description": "Title for create post bottom sheet"
+  },
+  "feedPostContentHint": "What's on your mind?",
+  "@feedPostContentHint": {
+    "description": "Hint text for post content input"
+  },
+  "feedPostHashtagsHint": "Add hashtags (comma separated)",
+  "@feedPostHashtagsHint": {
+    "description": "Hint text for hashtags input"
+  },
+  "feedAddImages": "Add Images",
+  "@feedAddImages": {
+    "description": "Button to add images to post"
+  },
+  "feedPostButton": "Post",
+  "@feedPostButton": {
+    "description": "Button to publish post"
+  },
+  "feedPostContentRequired": "Please enter post content",
+  "@feedPostContentRequired": {
+    "description": "Error message when post content is empty"
+  },
+  "feedEditPost": "Edit Post",
+  "@feedEditPost": {
+    "description": "Title for edit post bottom sheet"
+  },
+  "feedUpdateButton": "Update",
+  "@feedUpdateButton": {
+    "description": "Button to update post"
+  },
+  "feedPostOptions": "Post Options",
+  "@feedPostOptions": {
+    "description": "Title for post options bottom sheet"
+  },
+  "feedEditPostOption": "Edit Post",
+  "@feedEditPostOption": {
+    "description": "Option to edit post"
+  },
+  "feedDeletePostOption": "Delete Post",
+  "@feedDeletePostOption": {
+    "description": "Option to delete post"
+  },
+  "feedReportPostOption": "Report Post",
+  "@feedReportPostOption": {
+    "description": "Option to report post"
+  },
+  "feedReportCommentOption": "Report Comment",
+  "@feedReportCommentOption": {
+    "description": "Option to report comment"
+  },
+  "feedDeletePostConfirmTitle": "Delete Post",
+  "@feedDeletePostConfirmTitle": {
+    "description": "Title for delete post confirmation dialog"
+  },
+  "feedDeletePostConfirmMessage": "Are you sure you want to delete this post?",
+  "@feedDeletePostConfirmMessage": {
+    "description": "Message for delete post confirmation"
+  },
+  "refresh": "Refresh",
+  "@refresh": {
+    "description": "Button to refresh data"
+  },
+  "showMore": "Show more",
+  "@showMore": {
+    "description": "Button to show more content"
+  },
+  "hide": "Hide",
+  "@hide": {
+    "description": "Button to hide content"
+  },
+  "reportThisSet": "Report",
+  "@reportThisSet": {
+    "description": "Report title"
+  },
+  "reportDetails": "Report Details",
+  "@reportDetails": {
+    "description": "Report details title"
+  },
+  "reportSubmitted": "Report Submitted",
+  "@reportSubmitted": {
+    "description": "Report submitted title"
+  },
+  "continueBtn": "Continue",
+  "@continueBtn": {
+    "description": "Continue button"
+  },
+  "submitting": "Submitting...",
+  "@submitting": {
+    "description": "Submitting status"
+  },
+  "submitReport": "Submit Report",
+  "@submitReport": {
+    "description": "Submit report button"
+  },
+  "done": "Done",
+  "@done": {
+    "description": "Done button"
+  },
+  "pleaseSelectReason": "Please select a reason",
+  "@pleaseSelectReason": {
+    "description": "Please select reason message"
+  },
+  "failedToSubmitReport": "Failed to submit report",
+  "@failedToSubmitReport": {
+    "description": "Failed to submit report error"
+  },
+  "whyReportingThis": "Why are you reporting this?",
+  "@whyReportingThis": {
+    "description": "Why reporting question"
+  },
+  "additionalDetailsOptional": "Additional Details",
+  "@additionalDetailsOptional": {
+    "description": "Additional details title"
+  },
+  "reasonSelected": "Reason selected: {reason}",
+  "@reasonSelected": {
+    "description": "Display selected reason",
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "noneSelected": "None selected",
+  "@noneSelected": {
+    "description": "No reason selected"
+  },
+  "typeLabel": "Type",
+  "@typeLabel": {
+    "description": "Report type label"
+  },
+  "categoryLabel": "Category",
+  "@categoryLabel": {
+    "description": "Report category label"
+  },
+  "titleOptional": "Title",
+  "@titleOptional": {
+    "description": "Report title label"
+  },
+  "briefTitleForReport": "Enter a brief title for your report",
+  "@briefTitleForReport": {
+    "description": "Report title hint"
+  },
+  "descriptionOptional": "Description",
+  "@descriptionOptional": {
+    "description": "Report description label"
+  },
+  "provideMoreDetails": "Provide more details about the issue",
+  "@provideMoreDetails": {
+    "description": "Report description hint"
+  },
+  "thankYouForReport": "Thank you for your report!",
+  "@thankYouForReport": {
+    "description": "Thank you for reporting message"
+  },
+  "teamWillReview": "Our team will review and take action as soon as possible.",
+  "@teamWillReview": {
+    "description": "Team will review message"
+  },
+  "goBack": "Go Back",
+  "@goBack": {
+    "description": "Go back button"
+  },
+  "reportTypeProducts": "Products",
+  "@reportTypeProducts": {
+    "description": "Report type for products"
+  },
+  "reportTypeFeeds": "Feeds",
+  "@reportTypeFeeds": {
+    "description": "Report type for feeds"
+  },
+  "reportTypeComments": "Comments",
+  "@reportTypeComments": {
+    "description": "Report type for comments"
+  },
+  "reportTypeOther": "Other",
+  "@reportTypeOther": {
+    "description": "Report type for other"
+  },
+  "reportCategoryGeneral": "General report",
+  "@reportCategoryGeneral": {
+    "description": "General report category"
+  },
+  "reportCategoryBug": "Bug report",
+  "@reportCategoryBug": {
+    "description": "Bug report category"
+  },
+  "reportCategoryFeature": "Feature request",
+  "@reportCategoryFeature": {
+    "description": "Feature request category"
+  },
+  "reportCategoryComplaint": "Complaint",
+  "@reportCategoryComplaint": {
+    "description": "Complaint category"
+  },
+  "reportPriorityLow": "Low",
+  "@reportPriorityLow": {
+    "description": "Low priority level"
+  },
+  "reportPriorityMedium": "Medium",
+  "@reportPriorityMedium": {
+    "description": "Medium priority level"
+  },
+  "reportPriorityHigh": "High",
+  "@reportPriorityHigh": {
+    "description": "High priority level"
+  },
+  "reportPriorityUrgent": "Urgent",
+  "@reportPriorityUrgent": {
+    "description": "Urgent priority level"
+  },
+  "reportReasonInaccurateAnalysis": "The skin analysis result is inaccurate or incorrect",
+  "@reportReasonInaccurateAnalysis": {
+    "description": "Reason: Inaccurate analysis"
+  },
+  "reportReasonInappropriateMedicalAdvice": "Inappropriate or harmful medical advice was provided",
+  "@reportReasonInappropriateMedicalAdvice": {
+    "description": "Reason: Inappropriate medical advice"
+  },
+  "reportReasonTechnicalBug": "There is a technical bug or error in the app",
+  "@reportReasonTechnicalBug": {
+    "description": "Reason: Technical bug"
+  },
+  "reportReasonInappropriateChatContent": "Inappropriate content in AI chat responses",
+  "@reportReasonInappropriateChatContent": {
+    "description": "Reason: Inappropriate chat content"
+  },
+  "reportReasonPrivacyDataConcern": "Privacy or personal data security concern",
+  "@reportReasonPrivacyDataConcern": {
+    "description": "Reason: Privacy concern"
+  },
+  "reportReasonSpamAdvertisement": "Spam or unwanted advertisement content",
+  "@reportReasonSpamAdvertisement": {
+    "description": "Reason: Spam or advertisement"
+  },
+  "reportReasonOffensiveLanguage": "Offensive or inappropriate language",
+  "@reportReasonOffensiveLanguage": {
+    "description": "Reason: Offensive language"
+  },
+  "reportReasonMisleadingInformation": "Misleading or false health information",
+  "@reportReasonMisleadingInformation": {
+    "description": "Reason: Misleading information"
+  },
+  "reportReasonAppPerformanceIssue": "App crashes, slow performance, or functionality issues",
+  "@reportReasonAppPerformanceIssue": {
+    "description": "Reason: App performance issue"
+  },
+  "reportReasonOther": "Other issue not listed above",
+  "@reportReasonOther": {
+    "description": "Reason: Other"
+  },
+  "reportIssue": "Report Issue",
+  "@reportIssue": {
+    "description": "Report issue button"
+  },
+  "reportBugsOrInappropriateContent": "Report bugs or inappropriate content",
+  "@reportBugsOrInappropriateContent": {
+    "description": "Report description"
+  },
+  "reportProductsIssue": "Report Products Issue",
+  "@reportProductsIssue": {
+    "description": "Report products issue title"
+  },
+  "reportFeedsIssue": "Report Feeds Issue",
+  "@reportFeedsIssue": {
+    "description": "Report feeds issue title"
+  },
+  "reportCommentsIssue": "Report Comments Issue",
+  "@reportCommentsIssue": {
+    "description": "Report comments issue title"
+  },
+  "aiChatMessageIssue": "AI Chat Message Issue",
+  "@aiChatMessageIssue": {
+    "description": "AI chat message issue title"
+  },
+  "technicalBugReport": "Technical Bug Report",
+  "@technicalBugReport": {
+    "description": "Technical bug report title"
+  },
+  "messageId": "Message ID",
+  "@messageId": {
+    "description": "Message ID label"
+  },
+  "messageContent": "Message content",
+  "@messageContent": {
+    "description": "Message content label"
+  },
+  "chatId": "Chat ID",
+  "@chatId": {
+    "description": "Chat ID label"
+  },
+  "userProfile": "User Profile",
+  "@userProfile": {
+    "description": "User profile title"
+  },
+  "followers": "Followers",
+  "@followers": {
+    "description": "Followers label"
+  },
+  "following": "Following",
+  "@following": {
+    "description": "Following label"
+  },
+  "follow": "Follow",
+  "@follow": {
+    "description": "Follow button"
+  },
+  "unfollow": "Unfollow",
+  "@unfollow": {
+    "description": "Unfollow button"
+  },
+  "publicProfile": "Public Profile",
+  "@publicProfile": {
+    "description": "Public profile label"
+  },
+  "privateProfile": "Private Profile",
+  "@privateProfile": {
+    "description": "Private profile label"
+  },
+  "toggleProfileVisibility": "Toggle Profile Visibility",
+  "@toggleProfileVisibility": {
+    "description": "Toggle profile visibility button"
+  },
+  "posts": "Posts",
+  "@posts": {
+    "description": "Posts label"
+  },
+  "noPostsYet": "No posts yet",
+  "@noPostsYet": {
+    "description": "No posts message"
+  },
+  "loadingUserInfo": "Loading user information...",
+  "@loadingUserInfo": {
+    "description": "Loading user info message"
+  },
+  "userNotFound": "User not found",
+  "@userNotFound": {
+    "description": "User not found message"
+  },
+  "profileIsPrivate": "This profile is private",
+  "@profileIsPrivate": {
+    "description": "Private profile message"
+  },
+  "profileMyPosts": "My Posts",
+  "@profileMyPosts": {
+    "description": "User posts section title"
+  },
+  "profileNoPostsYet": "No posts yet",
+  "@profileNoPostsYet": {
+    "description": "No posts in profile message"
+  },
+  "profileLoadMore": "Load More",
+  "@profileLoadMore": {
+    "description": "Load more posts button"
+  },
+  "activityTabPosts": "Posts",
+  "@activityTabPosts": {
+    "description": "Posts tab in profile"
+  },
+  "activityTabActivity": "Activity",
+  "@activityTabActivity": {
+    "description": "Activity tab in profile"
+  },
+  "activityTypePosts": "Posts",
+  "@activityTypePosts": {
+    "description": "Activity type: Posts"
+  },
+  "activityTypeComments": "Comments",
+  "@activityTypeComments": {
+    "description": "Activity type: Comments"
+  },
+  "activityTypePost": "Post",
+  "@activityTypePost": {
+    "description": "Type label: Post"
+  },
+  "activityTypeComment": "Comment",
+  "@activityTypeComment": {
+    "description": "Type label: Comment"
+  },
+  "activityAll": "All",
+  "@activityAll": {
+    "description": "Activity filter: All"
+  },
+  "activityLikes": "Likes",
+  "@activityLikes": {
+    "description": "Activity filter: Likes"
+  },
+  "activitySaves": "Saved",
+  "@activitySaves": {
+    "description": "Activity filter: Saved"
+  },
+  "activityShares": "Shares",
+  "@activityShares": {
+    "description": "Activity filter: Shares"
+  },
+  "activityComments": "Comments",
+  "@activityComments": {
+    "description": "Activity filter: Comments"
+  },
+  "activityLiked": "Liked",
+  "@activityLiked": {
+    "description": "Activity label: Liked"
+  },
+  "activityDisliked": "Disliked",
+  "@activityDisliked": {
+    "description": "Activity label: Disliked"
+  },
+  "activitySaved": "Saved",
+  "@activitySaved": {
+    "description": "Activity label: Saved"
+  },
+  "activityShared": "Shared",
+  "@activityShared": {
+    "description": "Activity label: Shared"
+  },
+  "activityCommented": "Commented",
+  "@activityCommented": {
+    "description": "Activity label: Commented"
+  },
+  "activityLikedComment": "Liked Comment",
+  "@activityLikedComment": {
+    "description": "Activity label: Liked comment"
+  },
+  "activityDislikedComment": "Disliked Comment",
+  "@activityDislikedComment": {
+    "description": "Activity label: Disliked comment"
+  },
+  "activityNoInteractions": "No activities yet",
+  "@activityNoInteractions": {
+    "description": "No activities message"
+  },
+  "retry": "Retry",
+  "@retry": {
+    "description": "Retry button"
+  },
+  "profileTabInfo": "Info",
+  "@profileTabInfo": {
+    "description": "Info tab in profile"
+  },
+  "profileTabContent": "Content",
+  "@profileTabContent": {
+    "description": "Content tab in profile"
+  },
+  "selectionDuJour": "Today's Selection",
+  "@selectionDuJour": {
+    "description": "Daily selection section title"
+  },
+  "nouveautes": "New Arrivals",
+  "@nouveautes": {
+    "description": "New arrivals section title"
+  },
+  "routinesVisage": "Face Routines",
+  "@routinesVisage": {
+    "description": "Face routines section title"
+  },
+  "topVentes": "Best Sellers",
+  "@topVentes": {
+    "description": "Best sellers section title"
+  },
+  "leTeint": "Complexion",
+  "@leTeint": {
+    "description": "Makeup section title"
+  },
+  "serumNoiBat": "Featured Serum",
+  "@serumNoiBat": {
+    "description": "Featured serum section title"
+  },
+  "exfoliant": "Exfoliant",
+  "@exfoliant": {
+    "description": "Exfoliant section title"
+  },
+  "seeAll": "See All",
+  "@seeAll": {
+    "description": "See all button"
+  },
+  "peauSensible": "Sensitive Skin",
+  "@peauSensible": {
+    "description": "Filter for sensitive skin"
+  },
+  "peauNormale": "Normal Skin",
+  "@peauNormale": {
+    "description": "Filter for normal skin"
+  },
+  "peauGrasse": "Oily Skin",
+  "@peauGrasse": {
+    "description": "Filter for oily skin"
+  },
+  "comblezVotrePeau": "Pamper Your Skin",
+  "@comblezVotrePeau": {
+    "description": "Text on routines visage banner"
+  },
+  "cameraAccessNeeded": "Camera Access Needed",
+  "@cameraAccessNeeded": {
+    "description": "Title for camera permission dialog"
+  },
+  "cameraAccessMessage": "To use the camera for skincare product scanning, please enable camera access in your device settings",
+  "@cameraAccessMessage": {
+    "description": "Message requesting camera permission"
+  },
+  "cameraRequestMessage": "To start scanning skincare products, please enable camera access.",
+  "@cameraRequestMessage": {
+    "description": "Message requesting camera permission when not granted"
+  },
+  "galleryAccessNeeded": "Gallery Access Needed",
+  "@galleryAccessNeeded": {
+    "description": "Title for gallery permission dialog"
+  },
+  "galleryAccessMessage": "To use the gallery for skincare product scanning, please enable gallery access in your device settings",
+  "@galleryAccessMessage": {
+    "description": "Message requesting gallery permission"
+  },
+  "buttonEnableCamera": "Enable Camera",
+  "@buttonEnableCamera": {
+    "description": "Enable camera button"
+  },
+  "cropImage": "Crop Image",
+  "@cropImage": {
+    "description": "Title for crop image dialog"
+  },
+  "imageCapturedSuccess": "Image captured successfully, please wait for the result",
+  "@imageCapturedSuccess": {
+    "description": "Success message for image capture"
+  },
+  "scanProduct": "Scan Product",
+  "@scanProduct": {
+    "description": "Title for scan product screen"
+  },
+  "scanProductSubtitle": "Move the camera to scan barcodes or identify products.",
+  "@scanProductSubtitle": {
+    "description": "Description for scan product instructions"
+  },
+  "analyzeSkin": "Analyze Skin",
+  "@analyzeSkin": {
+    "description": "Option for skin analysis"
+  },
+  "keepYourFaceInFrame": "Keep your face in the frame",
+  "@keepYourFaceInFrame": {
+    "description": "Instruction to keep face in frame for skin analysis"
+  },
+  "analyzeSkinInstruction": "Make sure there is enough light and remove glasses for an accurate scan.",
+  "@analyzeSkinInstruction": {
+    "description": "Detailed instruction for skin analysis"
+  },
+  "discoverProducts": "Discover Products",
+  "@discoverProducts": {
+    "description": "Title for product discovery screen"
+  },
+  "searchProductPlaceholder": "Search product name, brand...",
+  "@searchProductPlaceholder": {
+    "description": "Placeholder for product search field"
+  },
+  "productType": "Product Type",
+  "@productType": {
+    "description": "Product type filter"
+  },
+  "brand": "Brand",
+  "@brand": {
+    "description": "Brand filter"
+  },
+  "skinProblem": "Skin Problem",
+  "@skinProblem": {
+    "description": "Skin problem filter"
+  },
+  "sort": "Sort",
+  "@sort": {
+    "description": "Sort button"
+  },
+  "filterAll": "All",
+  "@filterAll": {
+    "description": "'All' option for filter"
+  },
+  "filterLabelPhase": "Routine Phase",
+  "@filterLabelPhase": {
+    "description": "Label for routine phase filter"
+  },
+  "filterLabelStepKey": "Step Type",
+  "@filterLabelStepKey": {
+    "description": "Label for step type filter"
+  },
+  "filterLabelFrequency": "Recommended Frequency",
+  "@filterLabelFrequency": {
+    "description": "Label for frequency filter"
+  },
+  "filterLabelAmUsage": "Morning Usage (AM)",
+  "@filterLabelAmUsage": {
+    "description": "Label for morning usage filter"
+  },
+  "filterLabelPmUsage": "Evening Usage (PM)",
+  "@filterLabelPmUsage": {
+    "description": "Label for evening usage filter"
+  },
+  "filterOptionPhaseCleanse": "Cleanse",
+  "@filterOptionPhaseCleanse": {
+    "description": "Cleanse option for phase filter"
+  },
+  "filterOptionPhasePrep": "Prep",
+  "@filterOptionPhasePrep": {
+    "description": "Prep option for phase filter"
+  },
+  "filterOptionPhaseTreat": "Treat",
+  "@filterOptionPhaseTreat": {
+    "description": "Treat option for phase filter"
+  },
+  "filterOptionPhaseSeal": "Seal",
+  "@filterOptionPhaseSeal": {
+    "description": "Seal option for phase filter"
+  },
+  "filterOptionPhaseProtect": "Protect",
+  "@filterOptionPhaseProtect": {
+    "description": "Protect option for phase filter"
+  },
+  "filterOptionPhaseExtras": "Extras",
+  "@filterOptionPhaseExtras": {
+    "description": "Extras option for phase filter"
+  },
+  "filterOptionStepKeyMakeupRemover": "Makeup Remover",
+  "@filterOptionStepKeyMakeupRemover": {
+    "description": "Makeup remover option for stepKey filter"
+  },
+  "filterOptionStepKeyCleanser": "Cleanser",
+  "@filterOptionStepKeyCleanser": {
+    "description": "Cleanser option for stepKey filter"
+  },
+  "filterOptionStepKeyToner": "Toner",
+  "@filterOptionStepKeyToner": {
+    "description": "Toner option for stepKey filter"
+  },
+  "filterOptionStepKeyEssence": "Essence",
+  "@filterOptionStepKeyEssence": {
+    "description": "Essence option for stepKey filter"
+  },
+  "filterOptionStepKeySerum": "Serum",
+  "@filterOptionStepKeySerum": {
+    "description": "Serum option for stepKey filter"
+  },
+  "filterOptionStepKeyTreatmentSpot": "Spot Treatment",
+  "@filterOptionStepKeyTreatmentSpot": {
+    "description": "Spot treatment option for stepKey filter"
+  },
+  "filterOptionStepKeyExfoliant": "Exfoliant",
+  "@filterOptionStepKeyExfoliant": {
+    "description": "Exfoliant option for stepKey filter"
+  },
+  "filterOptionStepKeyTreatmentRetinoid": "Retinoid Treatment",
+  "@filterOptionStepKeyTreatmentRetinoid": {
+    "description": "Retinoid treatment option for stepKey filter"
+  },
+  "filterOptionStepKeyEyeTreatment": "Eye Treatment",
+  "@filterOptionStepKeyEyeTreatment": {
+    "description": "Eye treatment option for stepKey filter"
+  },
+  "filterOptionStepKeyMaskTreatment": "Mask Treatment",
+  "@filterOptionStepKeyMaskTreatment": {
+    "description": "Mask treatment option for stepKey filter"
+  },
+  "filterOptionStepKeyMoisturizer": "Moisturizer",
+  "@filterOptionStepKeyMoisturizer": {
+    "description": "Moisturizer option for stepKey filter"
+  },
+  "filterOptionStepKeyOcclusiveOrFaceOil": "Occlusive / Face Oil",
+  "@filterOptionStepKeyOcclusiveOrFaceOil": {
+    "description": "Occlusive or face oil option for stepKey filter"
+  },
+  "filterOptionStepKeySunscreen": "Sunscreen",
+  "@filterOptionStepKeySunscreen": {
+    "description": "Sunscreen option for stepKey filter"
+  },
+  "filterOptionStepKeySelfTan": "Self Tan",
+  "@filterOptionStepKeySelfTan": {
+    "description": "Self tan option for stepKey filter"
+  },
+  "filterOptionStepKeyMaskSheetSleeping": "Sheet / Sleeping Mask",
+  "@filterOptionStepKeyMaskSheetSleeping": {
+    "description": "Sheet or sleeping mask option for stepKey filter"
+  },
+  "filterOptionStepKeyLipCare": "Lip Care",
+  "@filterOptionStepKeyLipCare": {
+    "description": "Lip care option for stepKey filter"
+  },
+  "filterOptionStepKeyTool": "Tool",
+  "@filterOptionStepKeyTool": {
+    "description": "Tool option for stepKey filter"
+  },
+  "filterOptionFrequencyDaily": "Daily",
+  "@filterOptionFrequencyDaily": {
+    "description": "Daily option for frequency filter"
+  },
+  "filterOptionFrequencyWeekly": "Weekly (1-3 times/week)",
+  "@filterOptionFrequencyWeekly": {
+    "description": "Weekly option for frequency filter"
+  },
+  "filterOptionFrequencyOccasionally": "Occasionally",
+  "@filterOptionFrequencyOccasionally": {
+    "description": "Occasionally option for frequency filter"
+  },
+  "filterOptionAmUsageNever": "Never",
+  "@filterOptionAmUsageNever": {
+    "description": "Never option for AM usage filter"
+  },
+  "filterOptionAmUsageAvoid": "Avoid",
+  "@filterOptionAmUsageAvoid": {
+    "description": "Avoid option for AM usage filter"
+  },
+  "filterOptionAmUsageOptional": "Optional",
+  "@filterOptionAmUsageOptional": {
+    "description": "Optional option for AM usage filter"
+  },
+  "filterOptionAmUsageCore": "Core",
+  "@filterOptionAmUsageCore": {
+    "description": "Core option for AM usage filter"
+  },
+  "filterOptionPmUsageNever": "Never",
+  "@filterOptionPmUsageNever": {
+    "description": "Never option for PM usage filter"
+  },
+  "filterOptionPmUsageAvoid": "Avoid",
+  "@filterOptionPmUsageAvoid": {
+    "description": "Avoid option for PM usage filter"
+  },
+  "filterOptionPmUsageOptional": "Optional",
+  "@filterOptionPmUsageOptional": {
+    "description": "Optional option for PM usage filter"
+  },
+  "filterOptionPmUsageCore": "Core",
+  "@filterOptionPmUsageCore": {
+    "description": "Core option for PM usage filter"
+  },
+  "description": "Description",
+  "@description": {
+    "description": "Product description section title"
+  },
+  "usageInfo": "Usage Information",
+  "@usageInfo": {
+    "description": "Product usage information section title"
+  },
+  "keyActives": "Key Actives",
+  "@keyActives": {
+    "description": "Key actives section title"
+  },
+  "highlightedIngredients": "Highlighted Ingredients",
+  "@highlightedIngredients": {
+    "description": "Highlighted ingredients section title"
+  },
+  "detailedIngredientList": "Detailed Ingredient List",
+  "@detailedIngredientList": {
+    "description": "Detailed ingredient list section title"
+  },
+  "phase": "Phase",
+  "@phase": {
+    "description": "Phase label in usage information"
+  },
+  "step": "Step",
+  "@step": {
+    "description": "Step label in usage information"
+  },
+  "amUsage": "AM Usage",
+  "@amUsage": {
+    "description": "AM Usage label in usage information"
+  },
+  "pmUsage": "PM Usage",
+  "@pmUsage": {
+    "description": "PM Usage label in usage information"
+  },
+  "frequency": "Frequency",
+  "@frequency": {
+    "description": "Frequency label in usage information"
+  },
+  "addToRoutine": "Add to Routine",
+  "@addToRoutine": {
+    "description": "Button to add product to routine"
+  },
+  "overview": "Overview",
+  "@overview": {
+    "description": "Product overview tab"
+  },
+  "keyIngredients": "Key Ingredients",
+  "@keyIngredients": {
+    "description": "Key ingredients tab"
+  },
+  "detailedIngredients": "Detailed Ingredients",
+  "@detailedIngredients": {
+    "description": "Detailed ingredients tab"
+  },
+  "noDetailedIngredientInfo": "No detailed ingredient information",
+  "@noDetailedIngredientInfo": {
+    "description": "Message when there is no detailed ingredient information"
+  },
+  "ingredient": "Ingredient",
+  "@ingredient": {
+    "description": "Ingredient label"
+  },
+  "functions": "Functions",
+  "@functions": {
+    "description": "Ingredient functions label"
+  },
+  "irritancy": "Irritancy",
+  "@irritancy": {
+    "description": "Irritancy level label"
+  },
+  "comedogenicity": "Comedogenicity",
+  "@comedogenicity": {
+    "description": "Comedogenicity level label"
+  },
+  "alsoCalled": "Also Called",
+  "@alsoCalled": {
+    "description": "Alternative name label for ingredient"
+  },
+  "whatItDoes": "What it does:",
+  "@whatItDoes": {
+    "description": "Label for ingredient functions (what it does)"
+  },
+  "noKeyIngredientInfo": "No key ingredient information",
+  "@noKeyIngredientInfo": {
+    "description": "Message when there is no key ingredient information"
+  },
+  "activeIngredient": "Active Ingredient",
+  "@activeIngredient": {
+    "description": "Active ingredient label"
+  },
+  "routineManagement": "Routine Management",
+  "@routineManagement": {
+    "description": "Routine management page title"
+  },
+  "routineCalendar": "Calendar",
+  "@routineCalendar": {
+    "description": "Calendar section title"
+  },
+  "routineMonth": "Month",
+  "@routineMonth": {
+    "description": "Month view button label"
+  },
+  "routineMonthYear": "Month {month}, {year}",
+  "@routineMonthYear": {
+    "description": "Display month and year",
+    "placeholders": {
+      "month": {
+        "type": "int"
+      },
+      "year": {
+        "type": "int"
+      }
+    }
+  },
+  "routineMyRoutines": "My Routines",
+  "@routineMyRoutines": {
+    "description": "My routines section title"
+  },
+  "routineMorningCare": "Morning Skincare",
+  "@routineMorningCare": {
+    "description": "Morning routine name"
+  },
+  "routineEveningCare": "Evening Hydration Routine",
+  "@routineEveningCare": {
+    "description": "Evening routine name"
+  },
+  "routineStepsCount": "{count} steps",
+  "@routineStepsCount": {
+    "description": "Number of steps in routine",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "routineYourProgress": "Your Progress",
+  "@routineYourProgress": {
+    "description": "Progress section title"
+  },
+  "routineStreakDays": "Completion Streak",
+  "@routineStreakDays": {
+    "description": "Completion streak label"
+  },
+  "routineDaysCount": "{days} days",
+  "@routineDaysCount": {
+    "description": "Number of days",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "routineProgressMessage": "You're doing great! Completed {completed}/{total} routines this week.",
+  "@routineProgressMessage": {
+    "description": "Motivational progress message",
+    "placeholders": {
+      "completed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "routineFeatured": "Featured Routine",
+  "@routineFeatured": {
+    "description": "Featured routine section title"
+  },
+  "routineGlassSkin": "\"Glass Skin\" Routine",
+  "@routineGlassSkin": {
+    "description": "Glass Skin routine name"
+  },
+  "routineGlassSkinDesc": "Achieve luminous, radiant skin.",
+  "@routineGlassSkinDesc": {
+    "description": "Glass Skin routine description"
+  },
+  "routineRecommendationsFor": "Recommendations for {skinType} skin",
+  "@routineRecommendationsFor": {
+    "description": "Recommendations section title by skin type",
+    "placeholders": {
+      "skinType": {
+        "type": "String"
+      }
+    }
+  },
+  "routineOilControl": "Oil Control",
+  "@routineOilControl": {
+    "description": "Oil control routine name"
+  },
+  "routinePoreCleansing": "Pore Cleansing",
+  "@routinePoreCleansing": {
+    "description": "Pore cleansing routine name"
+  },
+  "routineMonday": "Mon",
+  "@routineMonday": {
+    "description": "Monday abbreviation"
+  },
+  "routineTuesday": "Tue",
+  "@routineTuesday": {
+    "description": "Tuesday abbreviation"
+  },
+  "routineWednesday": "Wed",
+  "@routineWednesday": {
+    "description": "Wednesday abbreviation"
+  },
+  "routineThursday": "Thu",
+  "@routineThursday": {
+    "description": "Thursday abbreviation"
+  },
+  "routineFriday": "Fri",
+  "@routineFriday": {
+    "description": "Friday abbreviation"
+  },
+  "routineSaturday": "Sat",
+  "@routineSaturday": {
+    "description": "Saturday abbreviation"
+  },
+  "routineSunday": "Sun",
+  "@routineSunday": {
+    "description": "Sunday abbreviation"
+  },
+  "routinePlay": "Start",
+  "@routinePlay": {
+    "description": "Start routine button"
+  },
+  "routineAddNew": "Add New Routine",
+  "@routineAddNew": {
+    "description": "Add new routine button"
+  },
+  "routineWeek": "Week",
+  "@routineWeek": {
+    "description": "Week view button label"
+  },
+  "routineWeekRange": "{startDate} - {endDate} {month}",
+  "@routineWeekRange": {
+    "description": "Display week range",
+    "placeholders": {
+      "startDate": {
+        "type": "int"
+      },
+      "endDate": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  }
+}

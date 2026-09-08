@@ -1,0 +1,2120 @@
+{
+  "@@locale": "vi",
+  "login": "Đăng nhập",
+  "@login": {
+    "description": "Nút đăng nhập"
+  },
+  "logout": "Đăng xuất",
+  "@logout": {
+    "description": "Nút đăng xuất"
+  },
+  "email": "Email",
+  "@email": {
+    "description": "Nhãn trường email"
+  },
+  "password": "Mật khẩu",
+  "@password": {
+    "description": "Nhãn trường mật khẩu"
+  },
+  "error": "Lỗi",
+  "@error": {
+    "description": "Văn bản lỗi chung"
+  },
+  "error_network": "Lỗi mạng!",
+  "@error_network": {
+    "description": "Thông báo lỗi kết nối mạng"
+  },
+  "error_unexpected": "Đã xảy ra lỗi!",
+  "@error_unexpected": {
+    "description": "Thông báo lỗi không mong muốn"
+  },
+  "error_unauthorized": "Không có quyền truy cập!",
+  "@error_unauthorized": {
+    "description": "Thông báo lỗi không có quyền truy cập"
+  },
+  "error_invalid_email": "Email không hợp lệ",
+  "@error_invalid_email": {
+    "description": "Thông báo lỗi định dạng email"
+  },
+  "error_invalid_password": "Mật khẩu của bạn phải có ít nhất 8 ký tự bao gồm chữ cái thường, chữ cái hoa và số",
+  "@error_invalid_password": {
+    "description": "Thông báo lỗi định dạng mật khẩu"
+  },
+  "error_internal_server": "Lỗi máy chủ nội bộ",
+  "@error_internal_server": {
+    "description": "Thông báo lỗi máy chủ nội bộ"
+  },
+  "ok": "OK",
+  "@ok": {
+    "description": "Nút OK"
+  },
+  "confirm": "Xác nhận",
+  "@confirm": {
+    "description": "Nút xác nhận"
+  },
+  "cancel": "Hủy",
+  "@cancel": {
+    "description": "Nút hủy"
+  },
+  "buttonOpenSettings": "Mở Cài đặt",
+  "@buttonOpenSettings": {
+    "description": "Nút mở cài đặt"
+  },
+  "hello": "Xin chào, {name}",
+  "@hello": {
+    "description": "Thông điệp chào mừng với tên người dùng",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "counter": "Bộ đếm",
+  "@counter": {
+    "description": "Tiêu đề màn hình bộ đếm"
+  },
+  "settings": "Cài đặt",
+  "@settings": {
+    "description": "Tiêu đề màn hình cài đặt"
+  },
+  "language": "Ngôn ngữ",
+  "@language": {
+    "description": "Nhãn cài đặt ngôn ngữ"
+  },
+  "about": "Giới thiệu",
+  "@about": {
+    "description": "Tiêu đề màn hình giới thiệu"
+  },
+  "terms_conditions": "Điều khoản & Điều kiện",
+  "@terms_conditions": {
+    "description": "Nhãn điều khoản và điều kiện"
+  },
+  "privacy_policies": "Chính sách bảo mật",
+  "@privacy_policies": {
+    "description": "Nhãn chính sách bảo mật"
+  },
+  "version_x": "Phiên bản {version}",
+  "@version_x": {
+    "description": "Văn bản hiển thị phiên bản",
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "security": "Bảo mật",
+  "@security": {
+    "description": "Phần cài đặt bảo mật"
+  },
+  "app_passcode": "Mật khẩu ứng dụng",
+  "@app_passcode": {
+    "description": "Nhãn cài đặt mật khẩu ứng dụng"
+  },
+  "change_passcode": "Đổi mật khẩu",
+  "@change_passcode": {
+    "description": "Nút đổi mật khẩu"
+  },
+  "english": "English",
+  "@english": {
+    "description": "Tên ngôn ngữ tiếng Anh"
+  },
+  "vietnamese": "Tiếng Việt",
+  "@vietnamese": {
+    "description": "Tên ngôn ngữ tiếng Việt"
+  },
+  "select_language": "Chọn ngôn ngữ",
+  "@select_language": {
+    "description": "Tiêu đề hộp thoại chọn ngôn ngữ"
+  },
+  "change_language": "Thay đổi ngôn ngữ",
+  "@change_language": {
+    "description": "Nút thay đổi ngôn ngữ"
+  },
+  "retry": "Thử lại",
+  "@retry": {
+    "description": "Nút thử lại"
+  },
+  "tried": "Đã thử",
+  "@tried": {
+    "description": "Nhãn trạng thái đã thử"
+  },
+  "favorite": "Yêu thích",
+  "@favorite": {
+    "description": "Nhãn hành động yêu thích"
+  },
+  "favorites": "Yêu thích",
+  "@favorites": {
+    "description": "Tiêu đề phần yêu thích"
+  },
+  "no_favorites": "Chưa có mục yêu thích nào",
+  "@no_favorites": {
+    "description": "Thông báo danh sách yêu thích trống"
+  },
+  "tap_heart_to_add_favorites": "Nhấn biểu tượng trái tim để thêm tư thế yêu thích",
+  "@tap_heart_to_add_favorites": {
+    "description": "Hướng dẫn thêm mục yêu thích"
+  },
+  "no_positions_found": "Không tìm thấy tư thế nào",
+  "@no_positions_found": {
+    "description": "Thông báo không có kết quả tìm kiếm"
+  },
+  "loading": "Đang tải...",
+  "@loading": {
+    "description": "Văn bản chỉ báo tải"
+  },
+  "search": "Tìm kiếm",
+  "@search": {
+    "description": "Trường nhập tìm kiếm"
+  },
+  "all_positions": "Tất cả tư thế",
+  "@all_positions": {
+    "description": "Nhãn bộ lọc tất cả tư thế"
+  },
+  "app_title": "69 POSITONS",
+  "@app_title": {
+    "description": "Tiêu đề ứng dụng"
+  },
+  "explore": "KHÁM PHÁ",
+  "@explore": {
+    "description": "Tiêu đề phần khám phá"
+  },
+  "your_progress": "Tiến trình của bạn:",
+  "@your_progress": {
+    "description": "Nhãn phần tiến trình"
+  },
+  "positions_completed": "{completed} / {total} tư thế đã hoàn thành",
+  "@positions_completed": {
+    "description": "Văn bản hoàn thành tiến trình",
+    "placeholders": {
+      "completed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "error_with_message": "Lỗi: {message}",
+  "@error_with_message": {
+    "description": "Thông báo lỗi với chi tiết",
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "removed_from_tried": "Đã xóa khỏi danh sách đã thử",
+  "@removed_from_tried": {
+    "description": "Thông báo xóa khỏi danh sách đã thử"
+  },
+  "marked_as_tried": "Đã đánh dấu là đã thử",
+  "@marked_as_tried": {
+    "description": "Thông báo đánh dấu đã thử"
+  },
+  "removed_from_favorites": "Đã xóa khỏi yêu thích",
+  "@removed_from_favorites": {
+    "description": "Thông báo xóa khỏi yêu thích"
+  },
+  "added_to_favorites": "Đã thêm vào yêu thích",
+  "@added_to_favorites": {
+    "description": "Thông báo thêm vào yêu thích"
+  },
+  "failed_to_load_position": "Không thể tải chi tiết tư thế.",
+  "@failed_to_load_position": {
+    "description": "Thông báo lỗi tải chi tiết tư thế"
+  },
+  "mark_tried": "Đánh dấu đã thử",
+  "@mark_tried": {
+    "description": "Nút đánh dấu đã thử"
+  },
+  "favorited": "Đã yêu thích",
+  "@favorited": {
+    "description": "Nhãn trạng thái đã yêu thích"
+  },
+  "your_favorites": "BẠN ĐÃ THÍCH",
+  "@your_favorites": {
+    "description": "Tiêu đề phần yêu thích"
+  },
+  "explore_positions": "Khám phá tư thế",
+  "@explore_positions": {
+    "description": "Nút khám phá tư thế"
+  },
+  "feeling_lucky": "Cảm thấy may mắn?",
+  "@feeling_lucky": {
+    "description": "Lời nhắc cảm thấy may mắn"
+  },
+  "set_tried": "Đánh dấu thử",
+  "@set_tried": {
+    "description": "Nút đánh dấu thử"
+  },
+  "support": "Hỗ trợ",
+  "@support": {
+    "description": "Tiêu đề phần hỗ trợ"
+  },
+  "rate_app": "Đánh giá ứng dụng",
+  "@rate_app": {
+    "description": "Nút đánh giá ứng dụng"
+  },
+  "contact_us": "Liên hệ chúng tôi",
+  "@contact_us": {
+    "description": "Nút liên hệ chúng tôi"
+  },
+  "titleMainScreen": "Màn hình chính",
+  "@titleMainScreen": {
+    "description": "Tiêu đề màn hình chính"
+  },
+  "titleRateApp": "Đánh giá ứng dụng này",
+  "@titleRateApp": {
+    "description": "Tiêu đề hộp thoại đánh giá ứng dụng"
+  },
+  "messageRateApp": "Bạn thích ứng dụng này? Hãy dành chút thời gian để đánh giá:",
+  "@messageRateApp": {
+    "description": "Thông điệp hộp thoại đánh giá ứng dụng"
+  },
+  "buttonOk": "OK",
+  "@buttonOk": {
+    "description": "Nút OK"
+  },
+  "titleNoInternet": "Không có kết nối Internet",
+  "@titleNoInternet": {
+    "description": "Tiêu đề hộp thoại không có internet"
+  },
+  "messageNoInternet": "Vui lòng kiểm tra kết nối internet và thử lại sau",
+  "@messageNoInternet": {
+    "description": "Thông điệp hộp thoại không có internet"
+  },
+  "messageInternetRestored": "Kết nối internet đã được khôi phục",
+  "@messageInternetRestored": {
+    "description": "Thông báo khôi phục kết nối internet"
+  },
+  "messageLoading": "Đang tải...",
+  "@messageLoading": {
+    "description": "Thông điệp tải"
+  },
+  "exit": "Thoát",
+  "@exit": {
+    "description": "Nút thoát"
+  },
+  "errorGeneral": "Đã xảy ra lỗi",
+  "@errorGeneral": {
+    "description": "Thông báo lỗi chung"
+  },
+  "backToLogin": "Quay lại đăng nhập",
+  "@backToLogin": {
+    "description": "Nút quay lại đăng nhập"
+  },
+  "pleaseCheckEmail": "Vui lòng kiểm tra email của bạn",
+  "@pleaseCheckEmail": {
+    "description": "Thông báo kiểm tra email"
+  },
+  "confirmAccountRegistration": "Xác nhận đăng ký tài khoản",
+  "@confirmAccountRegistration": {
+    "description": "Thông báo xác nhận đăng ký tài khoản"
+  },
+  "welcomeTitle": "Quét sản phẩm, xem nó có phù hợp với bạn không.",
+  "@welcomeTitle": {
+    "description": "Tiêu đề chính màn hình chào mừng"
+  },
+  "welcomeSubtitle": "Hãy bắt đầu tìm những sản phẩm phù hợp với làn da của bạn.",
+  "@welcomeSubtitle": {
+    "description": "Phụ đề màn hình chào mừng"
+  },
+  "continueWithApple": "Tiếp tục với Apple",
+  "@continueWithApple": {
+    "description": "Nút tiếp tục với Apple"
+  },
+  "continueWithGoogle": "Tiếp tục với Google",
+  "@continueWithGoogle": {
+    "description": "Nút tiếp tục với Google"
+  },
+  "continueWithEmail": "Tiếp tục với Email",
+  "@continueWithEmail": {
+    "description": "Nút tiếp tục với Email"
+  },
+  "switchToLightMode": "Chuyển sang chế độ sáng",
+  "@switchToLightMode": {
+    "description": "Tooltip cho nút chuyển sang chế độ sáng"
+  },
+  "switchToDarkMode": "Chuyển sang chế độ tối",
+  "@switchToDarkMode": {
+    "description": "Tooltip cho nút chuyển sang chế độ tối"
+  },
+  "period_week": "Tuần",
+  "@period_week": {
+    "description": "Nhãn chu kỳ tuần (số ít)"
+  },
+  "period_month": "Tháng",
+  "@period_month": {
+    "description": "Nhãn chu kỳ tháng (số ít)"
+  },
+  "period_year": "Năm",
+  "@period_year": {
+    "description": "Nhãn chu kỳ năm (số ít)"
+  },
+  "period_period": "Chu kỳ",
+  "@period_period": {
+    "description": "Nhãn chu kỳ chung cho trường hợp mặc định"
+  },
+  "period_weeks": "{count} tuần",
+  "@period_weeks": {
+    "description": "Nhãn chu kỳ tuần với số lượng (số nhiều)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "period_months": "{count} tháng",
+  "@period_months": {
+    "description": "Nhãn chu kỳ tháng với số lượng (số nhiều)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "period_years": "{count} năm",
+  "@period_years": {
+    "description": "Nhãn chu kỳ năm với số lượng (số nhiều)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "period_days": "{count} ngày",
+  "@period_days": {
+    "description": "Nhãn chu kỳ ngày với số lượng (số nhiều)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "period_day": "Ngày",
+  "@period_day": {
+    "description": "Nhãn chu kỳ ngày (số ít)"
+  },
+  "purchase_payment_failed": "Thanh toán thất bại: {message}",
+  "@purchase_payment_failed": {
+    "description": "Thông báo lỗi thanh toán thất bại với chi tiết",
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "purchase_not_logged_in": "Vui lòng đăng nhập để thực hiện mua hàng",
+  "@purchase_not_logged_in": {
+    "description": "Thông báo lỗi khi người dùng chưa đăng nhập để mua hàng"
+  },
+  "purchase_verification_failed": "Xác minh giao dịch thất bại: {error}",
+  "@purchase_verification_failed": {
+    "description": "Thông báo lỗi xác minh giao dịch thất bại",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "purchase_server_verification_failed": "Xác minh máy chủ thất bại: {error}",
+  "@purchase_server_verification_failed": {
+    "description": "Thông báo lỗi xác minh máy chủ thất bại",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "purchase_binding_check_error": "Kiểm tra ràng buộc thiết bị thất bại: {error}",
+  "@purchase_binding_check_error": {
+    "description": "Thông báo lỗi kiểm tra ràng buộc thiết bị thất bại",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "purchase_no_products": "Không có sản phẩm nào",
+  "@purchase_no_products": {
+    "description": "Thông báo lỗi khi không có sản phẩm nào khả dụng"
+  },
+  "purchase_load_products_error": "Không thể tải sản phẩm: {error}",
+  "@purchase_load_products_error": {
+    "description": "Thông báo lỗi không thể tải sản phẩm",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "purchase_store_unavailable": "Cửa hàng hiện không khả dụng",
+  "@purchase_store_unavailable": {
+    "description": "Thông báo lỗi cửa hàng không khả dụng"
+  },
+  "purchase_error": "Lỗi mua hàng: {error}",
+  "@purchase_error": {
+    "description": "Thông báo lỗi mua hàng chung",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "purchase_product_not_found": "Không tìm thấy sản phẩm",
+  "@purchase_product_not_found": {
+    "description": "Thông báo lỗi không tìm thấy sản phẩm"
+  },
+  "plan_weekly_premium": "Premium hàng tuần",
+  "@plan_weekly_premium": {
+    "description": "Tiêu đề gói premium hàng tuần"
+  },
+  "plan_monthly_premium": "Premium hàng tháng",
+  "@plan_monthly_premium": {
+    "description": "Tiêu đề gói premium hàng tháng"
+  },
+  "plan_yearly_premium": "Premium hàng năm",
+  "@plan_yearly_premium": {
+    "description": "Tiêu đề gói premium hàng năm"
+  },
+  "plan_premium_plan": "Gói Premium",
+  "@plan_premium_plan": {
+    "description": "Tiêu đề gói premium chung"
+  },
+  "plan_loading": "Đang tải...",
+  "@plan_loading": {
+    "description": "Văn bản tải cho thông tin gói"
+  },
+  "plan_free_trial": "Dùng thử miễn phí",
+  "@plan_free_trial": {
+    "description": "Văn bản chỉ báo dùng thử miễn phí"
+  },
+  "plan_per_week": " mỗi tuần",
+  "@plan_per_week": {
+    "description": "Hậu tố giá mỗi tuần"
+  },
+  "plan_vnd_per_week": " VND/tuần",
+  "@plan_vnd_per_week": {
+    "description": "Hậu tố giá VND mỗi tuần"
+  },
+  "binding_device_linked": "Thiết bị đã được liên kết",
+  "@binding_device_linked": {
+    "description": "Tiêu đề hộp thoại ràng buộc thiết bị khi thiết bị đã được liên kết"
+  },
+  "binding_device_linked_description": "Thiết bị này đã được liên kết với tài khoản khác. Để mua các tính năng premium, vui lòng chuyển sang tài khoản đã liên kết hoặc liên hệ hỗ trợ.",
+  "@binding_device_linked_description": {
+    "description": "Văn bản mô tả giải thích xung đột ràng buộc thiết bị"
+  },
+  "binding_purchase_instructions": "Để hoàn tất giao dịch mua hàng:",
+  "@binding_purchase_instructions": {
+    "description": "Tiêu đề hướng dẫn cho quy trình mua hàng"
+  },
+  "binding_switch_account": "Chuyển sang tài khoản đã liên kết ({linkedAccount})",
+  "@binding_switch_account": {
+    "description": "Hướng dẫn chuyển sang tài khoản đã liên kết",
+    "placeholders": {
+      "linkedAccount": {
+        "type": "String"
+      }
+    }
+  },
+  "binding_contact_support": "Liên hệ hỗ trợ để được trợ giúp",
+  "@binding_contact_support": {
+    "description": "Hướng dẫn liên hệ hỗ trợ"
+  },
+  "binding_cancel": "Hủy",
+  "@binding_cancel": {
+    "description": "Nút hủy trong hộp thoại ràng buộc"
+  },
+  "binding_understood": "Đã hiểu",
+  "@binding_understood": {
+    "description": "Nút đã hiểu trong hộp thoại ràng buộc"
+  },
+  "premium_processing_payment": "Đang xử lý thanh toán...",
+  "@premium_processing_payment": {
+    "description": "Thông báo toast khi đang xử lý thanh toán"
+  },
+  "premium_verifying_payment": "Đang xác minh thanh toán...",
+  "@premium_verifying_payment": {
+    "description": "Thông báo toast khi đang xác minh thanh toán"
+  },
+  "premium_purchase_success": "Mua hàng thành công!",
+  "@premium_purchase_success": {
+    "description": "Thông báo toast cho giao dịch mua thành công"
+  },
+  "premium_transaction_cancelled": "Giao dịch đã hủy",
+  "@premium_transaction_cancelled": {
+    "description": "Thông báo toast cho giao dịch đã hủy"
+  },
+  "premium_get_pro_access": "Nhận Quyền Truy Cập Pro",
+  "@premium_get_pro_access": {
+    "description": "Tiêu đề chính cho màn hình đăng ký premium"
+  },
+  "premium_unlock_features": "Mở khóa tất cả tính năng premium cho hành trình phân tích da của bạn",
+  "@premium_unlock_features": {
+    "description": "Phụ đề mô tả lợi ích premium"
+  },
+  "premium_ai_dermatologist": "Bác Sĩ Da Liễu AI",
+  "@premium_ai_dermatologist": {
+    "description": "Tiêu đề tính năng premium - bác sĩ da liễu AI"
+  },
+  "premium_instant_analysis": "Nhận phân tích da tức thì và khuyến nghị cá nhân hóa",
+  "@premium_instant_analysis": {
+    "description": "Mô tả tính năng premium - phân tích tức thì"
+  },
+  "premium_unlimited_scanning": "Quét Không Giới Hạn",
+  "@premium_unlimited_scanning": {
+    "description": "Tiêu đề tính năng premium - quét không giới hạn"
+  },
+  "premium_scan_anywhere": "Quét mọi lúc mọi nơi với quyền truy cập không giới hạn",
+  "@premium_scan_anywhere": {
+    "description": "Mô tả tính năng premium - quyền truy cập không giới hạn"
+  },
+  "premium_loading_subscriptions": "Đang tải gói đăng ký...",
+  "@premium_loading_subscriptions": {
+    "description": "Văn bản tải cho gói đăng ký"
+  },
+  "premium_unable_to_load": "Không thể tải gói đăng ký",
+  "@premium_unable_to_load": {
+    "description": "Thông báo lỗi khi không thể tải gói"
+  },
+  "premium_try_again": "Thử Lại",
+  "@premium_try_again": {
+    "description": "Nút thử lại"
+  },
+  "premium_free_trial": "Có Dùng Thử Miễn Phí",
+  "@premium_free_trial": {
+    "description": "Văn bản chỉ báo dùng thử miễn phí"
+  },
+  "premium_trial_description": "Bắt đầu trải nghiệm premium với thời gian dùng thử miễn phí",
+  "@premium_trial_description": {
+    "description": "Văn bản mô tả dùng thử miễn phí"
+  },
+  "premium_continue": "Tiếp Tục",
+  "@premium_continue": {
+    "description": "Nút tiếp tục cho đăng ký"
+  },
+  "premium_restore": "Khôi Phục",
+  "@premium_restore": {
+    "description": "Liên kết khôi phục mua hàng ở chân trang"
+  },
+  "premium_terms": "Điều Khoản",
+  "@premium_terms": {
+    "description": "Liên kết điều khoản dịch vụ ở chân trang"
+  },
+  "premium_privacy": "Riêng Tư",
+  "@premium_privacy": {
+    "description": "Liên kết chính sách riêng tư ở chân trang"
+  },
+  "premium_feature_coming_soon": "{feature} sắp ra mắt",
+  "@premium_feature_coming_soon": {
+    "description": "Thông báo sắp ra mắt cho tính năng không khả dụng",
+    "placeholders": {
+      "feature": {
+        "type": "String"
+      }
+    }
+  },
+  "premium_best_offer": "Ưu Đãi Tốt Nhất",
+  "@premium_best_offer": {
+    "description": "Văn bản huy hiệu cho gói ưu đãi tốt nhất"
+  },
+  "premium_popular": "Phổ Biến",
+  "@premium_popular": {
+    "description": "Văn bản huy hiệu cho gói phổ biến"
+  },
+  "premium_save_65_percent": "Tiết Kiệm 65%",
+  "@premium_save_65_percent": {
+    "description": "Mô tả tiết kiệm cho gói hàng năm"
+  },
+  "premium_flexible_billing": "Thanh toán linh hoạt",
+  "@premium_flexible_billing": {
+    "description": "Mô tả cho gói hàng tuần"
+  },
+  "premium_features_included": "Bao gồm tất cả tính năng premium",
+  "@premium_features_included": {
+    "description": "Mô tả cho mua một lần"
+  },
+  "premium_current_account": "Tài Khoản Hiện Tại",
+  "@premium_current_account": {
+    "description": "Nhãn cho tài khoản hiện tại trong hộp thoại ràng buộc"
+  },
+  "signIn": "Đăng nhập",
+  "@signIn": {
+    "description": "Nút đăng nhập"
+  },
+  "signUp": "Đăng ký",
+  "@signUp": {
+    "description": "Nút đăng ký"
+  },
+  "loginToApp": "Đăng nhập vào {appName}",
+  "@loginToApp": {
+    "description": "Tiêu đề đăng nhập với tên ứng dụng",
+    "placeholders": {
+      "appName": {
+        "type": "String"
+      }
+    }
+  },
+  "welcomeBackMessage": "Chào mừng trở lại! Vui lòng đăng nhập vào tài khoản của bạn",
+  "@welcomeBackMessage": {
+    "description": "Thông điệp chào mừng người dùng đăng nhập"
+  },
+  "forgotPassword": "Quên mật khẩu?",
+  "@forgotPassword": {
+    "description": "Liên kết quên mật khẩu"
+  },
+  "dontHaveAccount": "Chưa có tài khoản?",
+  "@dontHaveAccount": {
+    "description": "Câu hỏi chuyển sang đăng ký"
+  },
+  "signUpToApp": "Đăng ký vào {appName}",
+  "@signUpToApp": {
+    "description": "Tiêu đề đăng ký với tên ứng dụng",
+    "placeholders": {
+      "appName": {
+        "type": "String"
+      }
+    }
+  },
+  "welcomeSignUpMessage": "Chào mừng! Vui lòng nhập thông tin của bạn",
+  "@welcomeSignUpMessage": {
+    "description": "Thông điệp chào mừng người dùng đăng ký"
+  },
+  "fullName": "Họ và tên",
+  "@fullName": {
+    "description": "Nhãn trường họ và tên"
+  },
+  "alreadyHaveAccount": "Đã có tài khoản?",
+  "@alreadyHaveAccount": {
+    "description": "Câu hỏi chuyển sang đăng nhập"
+  },
+  "enterEmailToResetPassword": "Nhập email liên kết với tài khoản của bạn và chúng tôi sẽ gửi email với hướng dẫn đặt lại mật khẩu.",
+  "@enterEmailToResetPassword": {
+    "description": "Mô tả cách đặt lại mật khẩu"
+  },
+  "sendOtp": "Gửi OTP",
+  "@sendOtp": {
+    "description": "Nút gửi OTP"
+  },
+  "otpSentToEmail": "Chúng tôi đã gửi mã OTP 6 chữ số đến email của bạn",
+  "@otpSentToEmail": {
+    "description": "Thông báo OTP đã được gửi"
+  },
+  "otpResent": "OTP đã được gửi lại",
+  "@otpResent": {
+    "description": "Thông báo OTP đã được gửi lại"
+  },
+  "otpVerifiedSuccessfully": "OTP đã được xác thực thành công",
+  "@otpVerifiedSuccessfully": {
+    "description": "Thông báo OTP xác thực thành công"
+  },
+  "enterSixDigitCode": "Vui lòng nhập mã 6 chữ số",
+  "@enterSixDigitCode": {
+    "description": "Tiêu đề màn hình nhập OTP"
+  },
+  "enterOtp": "Nhập OTP",
+  "@enterOtp": {
+    "description": "Nhãn trường nhập OTP"
+  },
+  "resendOtpIn": "Gửi lại OTP sau",
+  "@resendOtpIn": {
+    "description": "Văn bản đếm ngược gửi lại OTP"
+  },
+  "resendOtp": "Gửi lại OTP",
+  "@resendOtp": {
+    "description": "Nút gửi lại OTP"
+  },
+  "continueText": "Tiếp tục",
+  "@continueText": {
+    "description": "Nút tiếp tục"
+  },
+  "verifyOtp": "Xác thực OTP",
+  "@verifyOtp": {
+    "description": "Tiêu đề màn hình xác thực OTP"
+  },
+  "createNewPassword": "Tạo mật khẩu mới",
+  "@createNewPassword": {
+    "description": "Tiêu đề màn hình tạo mật khẩu mới"
+  },
+  "passwordMustBeDifferent": "Mật khẩu mới của bạn phải khác với mật khẩu đã sử dụng trước đó",
+  "@passwordMustBeDifferent": {
+    "description": "Mô tả yêu cầu mật khẩu mới"
+  },
+  "confirmNewPassword": "Xác nhận mật khẩu mới",
+  "@confirmNewPassword": {
+    "description": "Nhãn trường xác nhận mật khẩu"
+  },
+  "resetPassword": "Đặt lại mật khẩu",
+  "@resetPassword": {
+    "description": "Nút đặt lại mật khẩu"
+  },
+  "passwordResetSuccessfully": "Mật khẩu đã được đặt lại thành công",
+  "@passwordResetSuccessfully": {
+    "description": "Thông báo đặt lại mật khẩu thành công"
+  },
+  "passwordResetNote": "Lưu ý: Có thể mất vài phút để email đặt lại mật khẩu đến hộp thư đến của bạn. Nếu không thấy, hãy kiểm tra thư mục spam. Hãy nhớ rằng chỉ liên kết đặt lại mật khẩu gần đây nhất mà bạn yêu cầu mới còn hiệu lực.",
+  "@passwordResetNote": {
+    "description": "Lưu ý về việc nhận email đặt lại mật khẩu"
+  },
+  "loginSuccess": "Đăng nhập thành công",
+  "@loginSuccess": {
+    "description": "Thông báo đăng nhập thành công"
+  },
+  "signUpSuccess": "Đăng ký thành công",
+  "@signUpSuccess": {
+    "description": "Thông báo đăng ký thành công"
+  },
+  "myProfile": "My Profile",
+  "@myProfile": {
+    "description": "Tiêu đề màn hình profile"
+  },
+  "followers": "Followers",
+  "@followers": {
+    "description": "Nhãn người theo dõi"
+  },
+  "following": "Following",
+  "@following": {
+    "description": "Nhãn đang theo dõi"
+  },
+  "skinType": "Skin type",
+  "@skinType": {
+    "description": "Nhãn loại da"
+  },
+  "skinConcerns": "Skin concerns",
+  "@skinConcerns": {
+    "description": "Nhãn vấn đề da"
+  },
+  "utilitiesRoutine": "Utilities's Routine",
+  "@utilitiesRoutine": {
+    "description": "Tiêu đề thói quen chăm sóc da"
+  },
+  "skinTypeDry": "Dry",
+  "@skinTypeDry": {
+    "description": "Loại da khô"
+  },
+  "skinConcernRedness": "redness",
+  "@skinConcernRedness": {
+    "description": "Vấn đề da đỏ"
+  },
+  "skinConcernAcne": "acne",
+  "@skinConcernAcne": {
+    "description": "Vấn đề mụn"
+  },
+  "account": "Tài khoản",
+  "@account": {
+    "description": "Nhãn phần tài khoản"
+  },
+  "profile": "Hồ sơ",
+  "@profile": {
+    "description": "Nhãn hồ sơ"
+  },
+  "yourSkin": "Làn da của bạn",
+  "@yourSkin": {
+    "description": "Nhãn làn da của bạn"
+  },
+  "productPreferences": "Sở thích sản phẩm",
+  "@productPreferences": {
+    "description": "Nhãn sở thích sản phẩm"
+  },
+  "avoidedIngredients": "Thành phần tránh",
+  "@avoidedIngredients": {
+    "description": "Nhãn thành phần tránh"
+  },
+  "likedIngredients": "Thành phần yêu thích",
+  "@likedIngredients": {
+    "description": "Nhãn thành phần yêu thích"
+  },
+  "holyGrails": "Sản phẩm tuyệt vời",
+  "@holyGrails": {
+    "description": "Nhãn sản phẩm tuyệt vời"
+  },
+  "socialMedia": "Mạng xã hội",
+  "@socialMedia": {
+    "description": "Nhãn mạng xã hội"
+  },
+  "emailPreferences": "Tùy chọn email",
+  "@emailPreferences": {
+    "description": "Nhãn tùy chọn email"
+  },
+  "pushNotifications": "Thông báo đẩy",
+  "@pushNotifications": {
+    "description": "Nhãn thông báo đẩy"
+  },
+  "legal": "Pháp lý",
+  "@legal": {
+    "description": "Nhãn phần pháp lý"
+  },
+  "privacyPolicy": "Chính sách bảo mật",
+  "@privacyPolicy": {
+    "description": "Nhãn chính sách bảo mật"
+  },
+  "termsOfService": "Điều khoản dịch vụ",
+  "@termsOfService": {
+    "description": "Nhãn điều khoản dịch vụ"
+  },
+  "contactUs": "Liên hệ chúng tôi",
+  "@contactUs": {
+    "description": "Nhãn liên hệ chúng tôi"
+  },
+  "rateUs": "Đánh giá chúng tôi",
+  "@rateUs": {
+    "description": "Nhãn đánh giá ứng dụng"
+  },
+  "theme": "Giao diện",
+  "@theme": {
+    "description": "Nhãn phần giao diện"
+  },
+  "darkMode": "Chế độ tối",
+  "@darkMode": {
+    "description": "Nhãn chế độ tối"
+  },
+  "lightMode": "Chế độ sáng",
+  "@lightMode": {
+    "description": "Nhãn chế độ sáng"
+  },
+  "changeLanguage": "Thay đổi ngôn ngữ",
+  "@changeLanguage": {
+    "description": "Nhãn thay đổi ngôn ngữ"
+  },
+  "currentLanguage": "Ngôn ngữ hiện tại",
+  "@currentLanguage": {
+    "description": "Nhãn ngôn ngữ hiện tại"
+  },
+  "editProfile": "Chỉnh sửa hồ sơ",
+  "@editProfile": {
+    "description": "Nhãn chỉnh sửa hồ sơ"
+  },
+  "changePassword": "Đổi mật khẩu",
+  "@changePassword": {
+    "description": "Nhãn đổi mật khẩu"
+  },
+  "deleteAccount": "Xóa tài khoản",
+  "@deleteAccount": {
+    "description": "Nhãn xóa tài khoản"
+  },
+  "choosePhotoSource": "Chọn nguồn ảnh",
+  "@choosePhotoSource": {
+    "description": "Tiêu đề bottom sheet chọn nguồn ảnh"
+  },
+  "selectWhereToTakePhoto": "Chọn nơi để chụp ảnh",
+  "@selectWhereToTakePhoto": {
+    "description": "Mô tả chọn nguồn ảnh"
+  },
+  "takeNewPhoto": "Chụp ảnh mới",
+  "@takeNewPhoto": {
+    "description": "Nút chụp ảnh từ camera"
+  },
+  "openYourGallery": "Mở thư viện ảnh",
+  "@openYourGallery": {
+    "description": "Nút mở thư viện ảnh"
+  },
+  "back": "Quay lại",
+  "@back": {
+    "description": "Nút quay lại"
+  },
+  "errorAccessingCamera": "Không thể truy cập camera",
+  "@errorAccessingCamera": {
+    "description": "Thông báo lỗi truy cập camera"
+  },
+  "errorAccessingGallery": "Không thể truy cập thư viện",
+  "@errorAccessingGallery": {
+    "description": "Thông báo lỗi truy cập thư viện"
+  },
+  "errorSelectImage": "Không thể chọn ảnh. Vui lòng thử lại.",
+  "@errorSelectImage": {
+    "description": "Thông báo lỗi chọn ảnh"
+  },
+  "editProfile": "Chỉnh sửa hồ sơ",
+  "@editProfile": {
+    "description": "Tiêu đề chỉnh sửa hồ sơ"
+  },
+  "profileUpdatedSuccessfully": "Hồ sơ đã được cập nhật thành công!",
+  "@profileUpdatedSuccessfully": {
+    "description": "Thông báo cập nhật hồ sơ thành công"
+  },
+  "updateProfileFailed": "Cập nhật hồ sơ thất bại: {message}",
+  "@updateProfileFailed": {
+    "description": "Thông báo cập nhật hồ sơ thất bại",
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "unknownPlayer": "NGƯỜI CHƠI KHÔNG XÁC ĐỊNH",
+  "@unknownPlayer": {
+    "description": "Tên người chơi mặc định"
+  },
+  "displayName": "Tên hiển thị",
+  "@displayName": {
+    "description": "Nhãn tên hiển thị"
+  },
+  "enterDisplayName": "Nhập tên hiển thị của bạn",
+  "@enterDisplayName": {
+    "description": "Gợi ý nhập tên hiển thị"
+  },
+  "username": "Tên người dùng",
+  "@username": {
+    "description": "Nhãn tên người dùng"
+  },
+  "enterUsername": "Nhập tên người dùng của bạn",
+  "@enterUsername": {
+    "description": "Gợi ý nhập tên người dùng"
+  },
+  "phone": "Số điện thoại",
+  "@phone": {
+    "description": "Nhãn số điện thoại"
+  },
+  "enterPhoneNumber": "Nhập số điện thoại của bạn",
+  "@enterPhoneNumber": {
+    "description": "Gợi ý nhập số điện thoại"
+  },
+  "gender": "Giới tính",
+  "@gender": {
+    "description": "Nhãn giới tính"
+  },
+  "selectGender": "Chọn giới tính",
+  "@selectGender": {
+    "description": "Gợi ý chọn giới tính"
+  },
+  "male": "Nam",
+  "@male": {
+    "description": "Giới tính nam"
+  },
+  "female": "Nữ",
+  "@female": {
+    "description": "Giới tính nữ"
+  },
+  "other": "Khác",
+  "@other": {
+    "description": "Giới tính khác"
+  },
+  "saveProfile": "LƯU HỒ SƠ",
+  "@saveProfile": {
+    "description": "Nút lưu hồ sơ"
+  },
+  "changePasswordDescription": "Để thay đổi mật khẩu, vui lòng nhập mật khẩu hiện tại và mật khẩu mới của bạn",
+  "@changePasswordDescription": {
+    "description": "Mô tả thay đổi mật khẩu"
+  },
+  "changePasswordSuccess": "Mật khẩu đã được thay đổi thành công",
+  "@changePasswordSuccess": {
+    "description": "Thông báo thay đổi mật khẩu thành công"
+  },
+  "currentPassword": "Mật khẩu hiện tại",
+  "@currentPassword": {
+    "description": "Nhãn mật khẩu hiện tại"
+  },
+  "newPassword": "Mật khẩu mới",
+  "@newPassword": {
+    "description": "Nhãn mật khẩu mới"
+  },
+  "confirmPassword": "Xác nhận mật khẩu",
+  "@confirmPassword": {
+    "description": "Nhãn xác nhận mật khẩu"
+  },
+  "reset": "Đặt lại",
+  "@reset": {
+    "description": "Nút đặt lại"
+  },
+  "deleteAccountConfirmTitle": "Bạn có chắc chắn?",
+  "@deleteAccountConfirmTitle": {
+    "description": "Tiêu đề xác nhận xóa tài khoản"
+  },
+  "deleteAccountConfirmMessage": "Nếu bạn xóa tài khoản, bạn sẽ không thể đăng nhập lại bằng nó nữa. Bạn có chắc chắn muốn tiếp tục?",
+  "@deleteAccountConfirmMessage": {
+    "description": "Thông báo xác nhận xóa tài khoản"
+  },
+  "deleteAccountSuccess": "Tài khoản đã được xóa thành công",
+  "@deleteAccountSuccess": {
+    "description": "Thông báo xóa tài khoản thành công"
+  },
+  "deleteAccountFailed": "Xóa tài khoản thất bại: {message}",
+  "@deleteAccountFailed": {
+    "description": "Thông báo xóa tài khoản thất bại",
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "feedNoPosts": "Không có bài viết nào",
+  "@feedNoPosts": {
+    "description": "Thông báo không có bài viết trong feed"
+  },
+  "feedPostCreatedSuccess": "Tạo bài viết thành công",
+  "@feedPostCreatedSuccess": {
+    "description": "Thông báo tạo bài viết thành công"
+  },
+  "feedPostUpdatedSuccess": "Cập nhật bài viết thành công",
+  "@feedPostUpdatedSuccess": {
+    "description": "Thông báo cập nhật bài viết thành công"
+  },
+  "feedPostDeletedSuccess": "Xóa bài viết thành công",
+  "@feedPostDeletedSuccess": {
+    "description": "Thông báo xóa bài viết thành công"
+  },
+  "feedCreatingPost": "Đang tạo bài viết...",
+  "@feedCreatingPost": {
+    "description": "Thông báo đang tạo bài viết"
+  },
+  "feedUnknownUser": "Unknown",
+  "@feedUnknownUser": {
+    "description": "Tên người dùng mặc định khi không xác định"
+  },
+  "feedCommentEdit": "Chỉnh sửa",
+  "@feedCommentEdit": {
+    "description": "Nút chỉnh sửa bình luận"
+  },
+  "feedCommentDelete": "Xóa",
+  "@feedCommentDelete": {
+    "description": "Nút xóa bình luận"
+  },
+  "feedCommentDeleteTitle": "Xóa bình luận",
+  "@feedCommentDeleteTitle": {
+    "description": "Tiêu đề dialog xóa bình luận"
+  },
+  "feedCommentDeleteConfirm": "Bạn có chắc muốn xóa bình luận này?",
+  "@feedCommentDeleteConfirm": {
+    "description": "Thông báo xác nhận xóa bình luận"
+  },
+  "feedCommentDeletedSuccess": "Đã xóa bình luận thành công",
+  "@feedCommentDeletedSuccess": {
+    "description": "Thông báo xóa bình luận thành công"
+  },
+  "feedCommentInputHint": "Viết bình luận...",
+  "@feedCommentInputHint": {
+    "description": "Gợi ý nhập bình luận"
+  },
+  "feedCommentsTitle": "Bình luận ({count})",
+  "@feedCommentsTitle": {
+    "description": "Tiêu đề danh sách bình luận với số lượng",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "feedCommentsEmpty": "Chưa có bình luận nào",
+  "@feedCommentsEmpty": {
+    "description": "Thông báo không có bình luận"
+  },
+  "feedCommentShowReplies": "Xem {count} câu trả lời",
+  "@feedCommentShowReplies": {
+    "description": "Nút hiển thị các câu trả lời",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "feedCommentHideReplies": "Ẩn câu trả lời",
+  "@feedCommentHideReplies": {
+    "description": "Nút ẩn các câu trả lời"
+  },
+  "feedCommentReply": "Trả lời",
+  "@feedCommentReply": {
+    "description": "Nút trả lời bình luận"
+  },
+  "feedCommentLoadMoreReplies": "Xem thêm {count} câu trả lời",
+  "@feedCommentLoadMoreReplies": {
+    "description": "Nút xem thêm câu trả lời",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "feedCommentOptions": "Tùy chọn bình luận",
+  "@feedCommentOptions": {
+    "description": "Tiêu đề bottom sheet tùy chọn bình luận"
+  },
+  "feedCommentReplyingTo": "Đang phản hồi",
+  "@feedCommentReplyingTo": {
+    "description": "Text hiển thị khi đang phản hồi comment"
+  },
+  "feedCommentEditing": "Đang chỉnh sửa bình luận",
+  "@feedCommentEditing": {
+    "description": "Text hiển thị khi đang chỉnh sửa comment"
+  },
+  "feedCreatePost": "Tạo bài viết",
+  "@feedCreatePost": {
+    "description": "Tiêu đề bottom sheet tạo bài viết"
+  },
+  "feedPostContentHint": "Bạn đang nghĩ gì?",
+  "@feedPostContentHint": {
+    "description": "Gợi ý nhập nội dung bài viết"
+  },
+  "feedPostHashtagsHint": "Thêm hashtags (cách nhau bằng dấu phẩy)",
+  "@feedPostHashtagsHint": {
+    "description": "Gợi ý nhập hashtags"
+  },
+  "feedAddImages": "Thêm ảnh",
+  "@feedAddImages": {
+    "description": "Nút thêm ảnh vào bài viết"
+  },
+  "feedPostButton": "Đăng",
+  "@feedPostButton": {
+    "description": "Nút đăng bài viết"
+  },
+  "feedPostContentRequired": "Vui lòng nhập nội dung bài viết",
+  "@feedPostContentRequired": {
+    "description": "Thông báo lỗi khi nội dung bài viết trống"
+  },
+  "feedEditPost": "Chỉnh sửa bài viết",
+  "@feedEditPost": {
+    "description": "Tiêu đề bottom sheet chỉnh sửa bài viết"
+  },
+  "feedUpdateButton": "Cập nhật",
+  "@feedUpdateButton": {
+    "description": "Nút cập nhật bài viết"
+  },
+  "feedPostOptions": "Tùy chọn bài viết",
+  "@feedPostOptions": {
+    "description": "Tiêu đề bottom sheet tùy chọn bài viết"
+  },
+  "feedEditPostOption": "Chỉnh sửa bài viết",
+  "@feedEditPostOption": {
+    "description": "Tùy chọn chỉnh sửa bài viết"
+  },
+  "feedDeletePostOption": "Xóa bài viết",
+  "@feedDeletePostOption": {
+    "description": "Tùy chọn xóa bài viết"
+  },
+  "feedReportPostOption": "Báo cáo bài viết",
+  "@feedReportPostOption": {
+    "description": "Tùy chọn báo cáo bài viết"
+  },
+  "feedReportCommentOption": "Báo cáo bình luận",
+  "@feedReportCommentOption": {
+    "description": "Tùy chọn báo cáo bình luận"
+  },
+  "feedDeletePostConfirmTitle": "Xóa bài viết",
+  "@feedDeletePostConfirmTitle": {
+    "description": "Tiêu đề xác nhận xóa bài viết"
+  },
+  "feedDeletePostConfirmMessage": "Bạn có chắc chắn muốn xóa bài viết này?",
+  "@feedDeletePostConfirmMessage": {
+    "description": "Nội dung xác nhận xóa bài viết"
+  },
+  "refresh": "Làm mới",
+  "@refresh": {
+    "description": "Nút làm mới dữ liệu"
+  },
+  "showMore": "Xem thêm",
+  "@showMore": {
+    "description": "Nút hiển thị thêm nội dung"
+  },
+  "hide": "Ẩn bớt",
+  "@hide": {
+    "description": "Nút ẩn bớt nội dung"
+  },
+  "reportThisSet": "Báo cáo",
+  "@reportThisSet": {
+    "description": "Tiêu đề báo cáo"
+  },
+  "reportDetails": "Chi tiết báo cáo",
+  "@reportDetails": {
+    "description": "Tiêu đề chi tiết báo cáo"
+  },
+  "reportSubmitted": "Đã gửi báo cáo",
+  "@reportSubmitted": {
+    "description": "Tiêu đề báo cáo đã gửi"
+  },
+  "continueBtn": "Tiếp tục",
+  "@continueBtn": {
+    "description": "Nút tiếp tục"
+  },
+  "submitting": "Đang gửi...",
+  "@submitting": {
+    "description": "Trạng thái đang gửi"
+  },
+  "submitReport": "Gửi báo cáo",
+  "@submitReport": {
+    "description": "Nút gửi báo cáo"
+  },
+  "done": "Hoàn tất",
+  "@done": {
+    "description": "Nút hoàn tất"
+  },
+  "pleaseSelectReason": "Vui lòng chọn lý do",
+  "@pleaseSelectReason": {
+    "description": "Thông báo yêu cầu chọn lý do"
+  },
+  "failedToSubmitReport": "Không thể gửi báo cáo",
+  "@failedToSubmitReport": {
+    "description": "Thông báo lỗi gửi báo cáo"
+  },
+  "whyReportingThis": "Tại sao bạn muốn báo cáo điều này?",
+  "@whyReportingThis": {
+    "description": "Câu hỏi lý do báo cáo"
+  },
+  "additionalDetailsOptional": "Thông tin bổ sung",
+  "@additionalDetailsOptional": {
+    "description": "Tiêu đề thông tin bổ sung"
+  },
+  "reasonSelected": "Lý do đã chọn: {reason}",
+  "@reasonSelected": {
+    "description": "Hiển thị lý do đã chọn",
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "noneSelected": "Chưa chọn",
+  "@noneSelected": {
+    "description": "Chưa chọn lý do"
+  },
+  "typeLabel": "Loại",
+  "@typeLabel": {
+    "description": "Nhãn loại báo cáo"
+  },
+  "categoryLabel": "Danh mục",
+  "@categoryLabel": {
+    "description": "Nhãn danh mục báo cáo"
+  },
+  "titleOptional": "Tiêu đề",
+  "@titleOptional": {
+    "description": "Nhãn tiêu đề báo cáo"
+  },
+  "briefTitleForReport": "Nhập tiêu đề ngắn gọn cho báo cáo",
+  "@briefTitleForReport": {
+    "description": "Gợi ý nhập tiêu đề báo cáo"
+  },
+  "descriptionOptional": "Mô tả",
+  "@descriptionOptional": {
+    "description": "Nhãn mô tả báo cáo"
+  },
+  "provideMoreDetails": "Cung cấp thêm chi tiết về vấn đề",
+  "@provideMoreDetails": {
+    "description": "Gợi ý nhập mô tả báo cáo"
+  },
+  "thankYouForReport": "Cảm ơn bạn đã báo cáo!",
+  "@thankYouForReport": {
+    "description": "Thông báo cảm ơn khi báo cáo"
+  },
+  "teamWillReview": "Đội ngũ của chúng tôi sẽ xem xét và xử lý trong thời gian sớm nhất.",
+  "@teamWillReview": {
+    "description": "Thông báo đội ngũ sẽ xem xét"
+  },
+  "goBack": "Quay lại",
+  "@goBack": {
+    "description": "Nút quay lại"
+  },
+  "reportTypeProducts": "Sản phẩm",
+  "@reportTypeProducts": {
+    "description": "Loại báo cáo về sản phẩm"
+  },
+  "reportTypeFeeds": "Bài viết",
+  "@reportTypeFeeds": {
+    "description": "Loại báo cáo về bài viết"
+  },
+  "reportTypeComments": "Bình luận",
+  "@reportTypeComments": {
+    "description": "Loại báo cáo về bình luận"
+  },
+  "reportTypeOther": "Khác",
+  "@reportTypeOther": {
+    "description": "Loại báo cáo khác"
+  },
+  "reportCategoryGeneral": "Báo cáo chung",
+  "@reportCategoryGeneral": {
+    "description": "Danh mục báo cáo chung"
+  },
+  "reportCategoryBug": "Báo cáo lỗi",
+  "@reportCategoryBug": {
+    "description": "Danh mục báo cáo lỗi"
+  },
+  "reportCategoryFeature": "Yêu cầu tính năng",
+  "@reportCategoryFeature": {
+    "description": "Danh mục yêu cầu tính năng"
+  },
+  "reportCategoryComplaint": "Khiếu nại",
+  "@reportCategoryComplaint": {
+    "description": "Danh mục khiếu nại"
+  },
+  "reportPriorityLow": "Thấp",
+  "@reportPriorityLow": {
+    "description": "Mức độ ưu tiên thấp"
+  },
+  "reportPriorityMedium": "Trung bình",
+  "@reportPriorityMedium": {
+    "description": "Mức độ ưu tiên trung bình"
+  },
+  "reportPriorityHigh": "Cao",
+  "@reportPriorityHigh": {
+    "description": "Mức độ ưu tiên cao"
+  },
+  "reportPriorityUrgent": "Khẩn cấp",
+  "@reportPriorityUrgent": {
+    "description": "Mức độ ưu tiên khẩn cấp"
+  },
+  "reportReasonInaccurateAnalysis": "Kết quả phân tích da không chính xác hoặc sai",
+  "@reportReasonInaccurateAnalysis": {
+    "description": "Lý do: Phân tích không chính xác"
+  },
+  "reportReasonInappropriateMedicalAdvice": "Lời khuyên y tế không phù hợp hoặc có hại",
+  "@reportReasonInappropriateMedicalAdvice": {
+    "description": "Lý do: Lời khuyên y tế không phù hợp"
+  },
+  "reportReasonTechnicalBug": "Có lỗi kỹ thuật trong ứng dụng",
+  "@reportReasonTechnicalBug": {
+    "description": "Lý do: Lỗi kỹ thuật"
+  },
+  "reportReasonInappropriateChatContent": "Nội dung không phù hợp trong phản hồi AI chat",
+  "@reportReasonInappropriateChatContent": {
+    "description": "Lý do: Nội dung chat không phù hợp"
+  },
+  "reportReasonPrivacyDataConcern": "Vấn đề về quyền riêng tư hoặc bảo mật dữ liệu cá nhân",
+  "@reportReasonPrivacyDataConcern": {
+    "description": "Lý do: Lo ngại về quyền riêng tư"
+  },
+  "reportReasonSpamAdvertisement": "Nội dung spam hoặc quảng cáo không mong muốn",
+  "@reportReasonSpamAdvertisement": {
+    "description": "Lý do: Spam hoặc quảng cáo"
+  },
+  "reportReasonOffensiveLanguage": "Ngôn ngữ xúc phạm hoặc không phù hợp",
+  "@reportReasonOffensiveLanguage": {
+    "description": "Lý do: Ngôn ngữ xúc phạm"
+  },
+  "reportReasonMisleadingInformation": "Thông tin sức khỏe sai lệch hoặc giả mạo",
+  "@reportReasonMisleadingInformation": {
+    "description": "Lý do: Thông tin sai lệch"
+  },
+  "reportReasonAppPerformanceIssue": "Ứng dụng bị lỗi, chậm hoặc vấn đề về chức năng",
+  "@reportReasonAppPerformanceIssue": {
+    "description": "Lý do: Vấn đề hiệu suất ứng dụng"
+  },
+  "reportReasonOther": "Vấn đề khác không được liệt kê ở trên",
+  "@reportReasonOther": {
+    "description": "Lý do: Khác"
+  },
+  "reportIssue": "Báo cáo vấn đề",
+  "@reportIssue": {
+    "description": "Nút báo cáo vấn đề"
+  },
+  "reportBugsOrInappropriateContent": "Báo cáo lỗi hoặc nội dung không phù hợp",
+  "@reportBugsOrInappropriateContent": {
+    "description": "Mô tả báo cáo"
+  },
+  "reportProductsIssue": "Báo cáo vấn đề về sản phẩm",
+  "@reportProductsIssue": {
+    "description": "Tiêu đề báo cáo sản phẩm"
+  },
+  "reportFeedsIssue": "Báo cáo vấn đề về bài viết",
+  "@reportFeedsIssue": {
+    "description": "Tiêu đề báo cáo bài viết"
+  },
+  "reportCommentsIssue": "Báo cáo vấn đề về bình luận",
+  "@reportCommentsIssue": {
+    "description": "Tiêu đề báo cáo bình luận"
+  },
+  "aiChatMessageIssue": "Vấn đề tin nhắn AI Chat",
+  "@aiChatMessageIssue": {
+    "description": "Tiêu đề vấn đề tin nhắn AI"
+  },
+  "technicalBugReport": "Báo cáo lỗi kỹ thuật",
+  "@technicalBugReport": {
+    "description": "Tiêu đề báo cáo lỗi kỹ thuật"
+  },
+  "messageId": "ID tin nhắn",
+  "@messageId": {
+    "description": "Nhãn ID tin nhắn"
+  },
+  "messageContent": "Nội dung tin nhắn",
+  "@messageContent": {
+    "description": "Nhãn nội dung tin nhắn"
+  },
+  "chatId": "ID cuộc trò chuyện",
+  "@chatId": {
+    "description": "Nhãn ID cuộc trò chuyện"
+  },
+  "userProfile": "Hồ sơ người dùng",
+  "@userProfile": {
+    "description": "Tiêu đề hồ sơ người dùng"
+  },
+  "followers": "Người theo dõi",
+  "@followers": {
+    "description": "Nhãn người theo dõi"
+  },
+  "following": "Đang theo dõi",
+  "@following": {
+    "description": "Nhãn đang theo dõi"
+  },
+  "follow": "Theo dõi",
+  "@follow": {
+    "description": "Nút theo dõi"
+  },
+  "unfollow": "Bỏ theo dõi",
+  "@unfollow": {
+    "description": "Nút bỏ theo dõi"
+  },
+  "publicProfile": "Hồ sơ công khai",
+  "@publicProfile": {
+    "description": "Nhãn hồ sơ công khai"
+  },
+  "privateProfile": "Hồ sơ riêng tư",
+  "@privateProfile": {
+    "description": "Nhãn hồ sơ riêng tư"
+  },
+  "toggleProfileVisibility": "Chuyển đổi hiển thị hồ sơ",
+  "@toggleProfileVisibility": {
+    "description": "Nút chuyển đổi hiển thị hồ sơ"
+  },
+  "posts": "Bài viết",
+  "@posts": {
+    "description": "Nhãn bài viết"
+  },
+  "noPostsYet": "Chưa có bài viết nào",
+  "@noPostsYet": {
+    "description": "Thông báo chưa có bài viết"
+  },
+  "loadingUserInfo": "Đang tải thông tin người dùng...",
+  "@loadingUserInfo": {
+    "description": "Thông báo đang tải thông tin"
+  },
+  "userNotFound": "Không tìm thấy người dùng",
+  "@userNotFound": {
+    "description": "Thông báo không tìm thấy người dùng"
+  },
+  "profileIsPrivate": "Hồ sơ này ở chế độ riêng tư",
+  "@profileIsPrivate": {
+    "description": "Thông báo hồ sơ riêng tư"
+  },
+  "profileMyPosts": "Bài viết của tôi",
+  "@profileMyPosts": {
+    "description": "Tiêu đề phần bài viết của user"
+  },
+  "profileNoPostsYet": "Chưa có bài viết nào",
+  "@profileNoPostsYet": {
+    "description": "Thông báo chưa có bài viết trong profile"
+  },
+  "profileLoadMore": "Xem thêm",
+  "@profileLoadMore": {
+    "description": "Nút tải thêm bài viết"
+  },
+  "activityTabPosts": "Bài viết",
+  "@activityTabPosts": {
+    "description": "Tab bài viết trong profile"
+  },
+  "activityTabActivity": "Hoạt động",
+  "@activityTabActivity": {
+    "description": "Tab hoạt động trong profile"
+  },
+  "activityTypePosts": "Bài viết",
+  "@activityTypePosts": {
+    "description": "Loại hoạt động: Bài viết"
+  },
+  "activityTypeComments": "Bình luận",
+  "@activityTypeComments": {
+    "description": "Loại hoạt động: Bình luận"
+  },
+  "activityTypePost": "Bài viết",
+  "@activityTypePost": {
+    "description": "Nhãn loại: Bài viết"
+  },
+  "activityTypeComment": "Bình luận",
+  "@activityTypeComment": {
+    "description": "Nhãn loại: Bình luận"
+  },
+  "activityAll": "Tất cả",
+  "@activityAll": {
+    "description": "Bộ lọc hoạt động: Tất cả"
+  },
+  "activityLikes": "Thích",
+  "@activityLikes": {
+    "description": "Bộ lọc hoạt động: Thích"
+  },
+  "activitySaves": "Đã lưu",
+  "@activitySaves": {
+    "description": "Bộ lọc hoạt động: Đã lưu"
+  },
+  "activityShares": "Chia sẻ",
+  "@activityShares": {
+    "description": "Bộ lọc hoạt động: Chia sẻ"
+  },
+  "activityComments": "Bình luận",
+  "@activityComments": {
+    "description": "Bộ lọc hoạt động: Bình luận"
+  },
+  "activityLiked": "Đã thích",
+  "@activityLiked": {
+    "description": "Nhãn hoạt động: Đã thích"
+  },
+  "activityDisliked": "Không thích",
+  "@activityDisliked": {
+    "description": "Nhãn hoạt động: Không thích"
+  },
+  "activitySaved": "Đã lưu",
+  "@activitySaved": {
+    "description": "Nhãn hoạt động: Đã lưu"
+  },
+  "activityShared": "Đã chia sẻ",
+  "@activityShared": {
+    "description": "Nhãn hoạt động: Đã chia sẻ"
+  },
+  "activityCommented": "Đã bình luận",
+  "@activityCommented": {
+    "description": "Nhãn hoạt động: Đã bình luận"
+  },
+  "activityLikedComment": "Đã thích bình luận",
+  "@activityLikedComment": {
+    "description": "Nhãn hoạt động: Đã thích bình luận"
+  },
+  "activityDislikedComment": "Không thích bình luận",
+  "@activityDislikedComment": {
+    "description": "Nhãn hoạt động: Không thích bình luận"
+  },
+  "activityNoInteractions": "Chưa có hoạt động nào",
+  "@activityNoInteractions": {
+    "description": "Thông báo không có hoạt động"
+  },
+  "retry": "Thử lại",
+  "@retry": {
+    "description": "Nút thử lại"
+  },
+  "profileTabInfo": "Thông tin",
+  "@profileTabInfo": {
+    "description": "Tab thông tin trong profile"
+  },
+  "profileTabContent": "Nội dung",
+  "@profileTabContent": {
+    "description": "Tab nội dung trong profile"
+  },
+  "selectionDuJour": "Lựa chọn hôm nay",
+  "@selectionDuJour": {
+    "description": "Tiêu đề phần selection của ngày"
+  },
+  "nouveautes": "Sản phẩm mới",
+  "@nouveautes": {
+    "description": "Tiêu đề phần sản phẩm mới"
+  },
+  "routinesVisage": "Quy trình chăm sóc da mặt",
+  "@routinesVisage": {
+    "description": "Tiêu đề phần routines cho mặt"
+  },
+  "topVentes": "Bán chạy nhất",
+  "@topVentes": {
+    "description": "Tiêu đề phần sản phẩm bán chạy"
+  },
+  "leTeint": "Trang điểm",
+  "@leTeint": {
+    "description": "Tiêu đề phần makeup"
+  },
+  "serumNoiBat": "Serum nổi bật",
+  "@serumNoiBat": {
+    "description": "Tiêu đề phần serum nổi bật"
+  },
+  "exfoliant": "Exfoliant",
+  "@exfoliant": {
+    "description": "Tiêu đề phần exfoliant"
+  },
+  "seeAll": "Xem tất cả",
+  "@seeAll": {
+    "description": "Nút xem tất cả"
+  },
+  "peauSensible": "Da nhạy cảm",
+  "@peauSensible": {
+    "description": "Filter cho da nhạy cảm"
+  },
+  "peauNormale": "Da thường",
+  "@peauNormale": {
+    "description": "Filter cho da thường"
+  },
+  "peauGrasse": "Da dầu",
+  "@peauGrasse": {
+    "description": "Filter cho da dầu"
+  },
+  "comblezVotrePeau": "Chăm sóc làn da của bạn",
+  "@comblezVotrePeau": {
+    "description": "Text trên banner routines visage"
+  },
+  "cameraAccessNeeded": "Cần quyền truy cập camera",
+  "@cameraAccessNeeded": {
+    "description": "Tiêu đề dialog yêu cầu quyền camera"
+  },
+  "cameraAccessMessage": "Để sử dụng camera để quét sản phẩm skin care, vui lòng bật quyền truy cập camera trong cài đặt thiết bị của bạn",
+  "@cameraAccessMessage": {
+    "description": "Thông điệp yêu cầu quyền camera"
+  },
+  "cameraRequestMessage": "Để bắt đầu quét sản phẩm skin care, vui lòng bật quyền truy cập camera.",
+  "@cameraRequestMessage": {
+    "description": "Thông điệp yêu cầu quyền camera khi chưa được cấp"
+  },
+  "galleryAccessNeeded": "Cần quyền truy cập thư viện",
+  "@galleryAccessNeeded": {
+    "description": "Tiêu đề dialog yêu cầu quyền thư viện"
+  },
+  "galleryAccessMessage": "Để sử dụng thư viện để quét sản phẩm skin care, vui lòng bật quyền truy cập thư viện trong cài đặt thiết bị của bạn",
+  "@galleryAccessMessage": {
+    "description": "Thông điệp yêu cầu quyền thư viện"
+  },
+  "buttonEnableCamera": "Bật Camera",
+  "@buttonEnableCamera": {
+    "description": "Nút bật camera"
+  },
+  "cropImage": "Cắt ảnh",
+  "@cropImage": {
+    "description": "Tiêu đề dialog cắt ảnh"
+  },
+  "imageCapturedSuccess": "Ảnh đã được chụp thành công, vui lòng đợi kết quả",
+  "@imageCapturedSuccess": {
+    "description": "Thông báo chụp ảnh thành công"
+  },
+  "scanProduct": "Quét Sản Phẩm",
+  "@scanProduct": {
+    "description": "Tiêu đề màn hình quét sản phẩm"
+  },
+  "scanProductSubtitle": "Di chuyển camera để quét mã vạch hoặc nhận diện sản phẩm.",
+  "@scanProductSubtitle": {
+    "description": "Mô tả hướng dẫn quét sản phẩm"
+  },
+  "analyzeSkin": "Phân Tích Da",
+  "@analyzeSkin": {
+    "description": "Tùy chọn phân tích da"
+  },
+  "keepYourFaceInFrame": "Giữ khuôn mặt của bạn trong khung",
+  "@keepYourFaceInFrame": {
+    "description": "Hướng dẫn giữ khuôn mặt trong khung khi phân tích da"
+  },
+  "analyzeSkinInstruction": "Đảm bảo có đủ ánh sáng và tháo kính để quét chính xác.",
+  "@analyzeSkinInstruction": {
+    "description": "Hướng dẫn chi tiết cho phân tích da"
+  },
+  "discoverProducts": "Khám Phá Sản Phẩm",
+  "@discoverProducts": {
+    "description": "Tiêu đề màn hình khám phá sản phẩm"
+  },
+  "searchProductPlaceholder": "Tìm kiếm tên sản phẩm, thương hiệu...",
+  "@searchProductPlaceholder": {
+    "description": "Placeholder cho ô tìm kiếm sản phẩm"
+  },
+  "productType": "Loại sản phẩm",
+  "@productType": {
+    "description": "Filter loại sản phẩm"
+  },
+  "brand": "Thương hiệu",
+  "@brand": {
+    "description": "Filter thương hiệu"
+  },
+  "skinProblem": "Vấn đề da",
+  "@skinProblem": {
+    "description": "Filter vấn đề da"
+  },
+  "sort": "Sắp xếp",
+  "@sort": {
+    "description": "Nút sắp xếp"
+  },
+  "filterAll": "Tất cả",
+  "@filterAll": {
+    "description": "Tùy chọn 'Tất cả' cho filter"
+  },
+  "filterLabelPhase": "Giai đoạn routine",
+  "@filterLabelPhase": {
+    "description": "Label filter giai đoạn routine"
+  },
+  "filterLabelStepKey": "Loại bước",
+  "@filterLabelStepKey": {
+    "description": "Label filter loại bước"
+  },
+  "filterLabelFrequency": "Tần suất khuyến nghị",
+  "@filterLabelFrequency": {
+    "description": "Label filter tần suất"
+  },
+  "filterLabelAmUsage": "Sử dụng buổi sáng (AM)",
+  "@filterLabelAmUsage": {
+    "description": "Label filter sử dụng buổi sáng"
+  },
+  "filterLabelPmUsage": "Sử dụng buổi tối (PM)",
+  "@filterLabelPmUsage": {
+    "description": "Label filter sử dụng buổi tối"
+  },
+  "filterOptionPhaseCleanse": "Cleanse – Làm sạch",
+  "@filterOptionPhaseCleanse": {
+    "description": "Option cleanse cho filter phase"
+  },
+  "filterOptionPhasePrep": "Prep – Cân bằng/Chuẩn bị",
+  "@filterOptionPhasePrep": {
+    "description": "Option prep cho filter phase"
+  },
+  "filterOptionPhaseTreat": "Treat – Điều trị",
+  "@filterOptionPhaseTreat": {
+    "description": "Option treat cho filter phase"
+  },
+  "filterOptionPhaseSeal": "Seal – Khóa ẩm",
+  "@filterOptionPhaseSeal": {
+    "description": "Option seal cho filter phase"
+  },
+  "filterOptionPhaseProtect": "Protect – Bảo vệ",
+  "@filterOptionPhaseProtect": {
+    "description": "Option protect cho filter phase"
+  },
+  "filterOptionPhaseExtras": "Extras – Phụ trợ",
+  "@filterOptionPhaseExtras": {
+    "description": "Option extras cho filter phase"
+  },
+  "filterOptionStepKeyMakeupRemover": "Makeup Remover – Tẩy trang",
+  "@filterOptionStepKeyMakeupRemover": {
+    "description": "Option makeup_remover cho filter stepKey"
+  },
+  "filterOptionStepKeyCleanser": "Cleanser – Sữa rửa mặt",
+  "@filterOptionStepKeyCleanser": {
+    "description": "Option cleanser cho filter stepKey"
+  },
+  "filterOptionStepKeyToner": "Toner",
+  "@filterOptionStepKeyToner": {
+    "description": "Option toner cho filter stepKey"
+  },
+  "filterOptionStepKeyEssence": "Essence",
+  "@filterOptionStepKeyEssence": {
+    "description": "Option essence cho filter stepKey"
+  },
+  "filterOptionStepKeySerum": "Serum",
+  "@filterOptionStepKeySerum": {
+    "description": "Option serum cho filter stepKey"
+  },
+  "filterOptionStepKeyTreatmentSpot": "Spot Treatment – Chấm mụn/điểm",
+  "@filterOptionStepKeyTreatmentSpot": {
+    "description": "Option treatment_spot cho filter stepKey"
+  },
+  "filterOptionStepKeyExfoliant": "Exfoliant – Tẩy tế bào chết",
+  "@filterOptionStepKeyExfoliant": {
+    "description": "Option exfoliant cho filter stepKey"
+  },
+  "filterOptionStepKeyTreatmentRetinoid": "Retinoid Treatment",
+  "@filterOptionStepKeyTreatmentRetinoid": {
+    "description": "Option treatment_retinoid cho filter stepKey"
+  },
+  "filterOptionStepKeyEyeTreatment": "Eye Treatment – Kem mắt",
+  "@filterOptionStepKeyEyeTreatment": {
+    "description": "Option eye_treatment cho filter stepKey"
+  },
+  "filterOptionStepKeyMaskTreatment": "Mask Treatment – Mặt nạ treatment",
+  "@filterOptionStepKeyMaskTreatment": {
+    "description": "Option mask_treatment cho filter stepKey"
+  },
+  "filterOptionStepKeyMoisturizer": "Moisturizer – Kem dưỡng ẩm",
+  "@filterOptionStepKeyMoisturizer": {
+    "description": "Option moisturizer cho filter stepKey"
+  },
+  "filterOptionStepKeyOcclusiveOrFaceOil": "Occlusive / Face Oil",
+  "@filterOptionStepKeyOcclusiveOrFaceOil": {
+    "description": "Option occlusive_or_face_oil cho filter stepKey"
+  },
+  "filterOptionStepKeySunscreen": "Sunscreen – Kem chống nắng",
+  "@filterOptionStepKeySunscreen": {
+    "description": "Option sunscreen cho filter stepKey"
+  },
+  "filterOptionStepKeySelfTan": "Self Tan",
+  "@filterOptionStepKeySelfTan": {
+    "description": "Option self_tan cho filter stepKey"
+  },
+  "filterOptionStepKeyMaskSheetSleeping": "Sheet / Sleeping Mask",
+  "@filterOptionStepKeyMaskSheetSleeping": {
+    "description": "Option mask_sheet_sleeping cho filter stepKey"
+  },
+  "filterOptionStepKeyLipCare": "Lip Care – Chăm sóc môi",
+  "@filterOptionStepKeyLipCare": {
+    "description": "Option lip_care cho filter stepKey"
+  },
+  "filterOptionStepKeyTool": "Tool – Dụng cụ",
+  "@filterOptionStepKeyTool": {
+    "description": "Option tool cho filter stepKey"
+  },
+  "filterOptionFrequencyDaily": "Daily – Hàng ngày",
+  "@filterOptionFrequencyDaily": {
+    "description": "Option daily cho filter frequency"
+  },
+  "filterOptionFrequencyWeekly": "Weekly – 1–3 lần/tuần",
+  "@filterOptionFrequencyWeekly": {
+    "description": "Option weekly cho filter frequency"
+  },
+  "filterOptionFrequencyOccasionally": "Occasionally – Thỉnh thoảng",
+  "@filterOptionFrequencyOccasionally": {
+    "description": "Option occasionally cho filter frequency"
+  },
+  "filterOptionAmUsageNever": "Never – Không dùng buổi sáng",
+  "@filterOptionAmUsageNever": {
+    "description": "Option never cho filter amUsage"
+  },
+  "filterOptionAmUsageAvoid": "Avoid – Hạn chế buổi sáng",
+  "@filterOptionAmUsageAvoid": {
+    "description": "Option avoid cho filter amUsage"
+  },
+  "filterOptionAmUsageOptional": "Optional – Tùy chọn",
+  "@filterOptionAmUsageOptional": {
+    "description": "Option optional cho filter amUsage"
+  },
+  "filterOptionAmUsageCore": "Core – Nên dùng buổi sáng",
+  "@filterOptionAmUsageCore": {
+    "description": "Option core cho filter amUsage"
+  },
+  "filterOptionPmUsageNever": "Never – Không dùng buổi tối",
+  "@filterOptionPmUsageNever": {
+    "description": "Option never cho filter pmUsage"
+  },
+  "filterOptionPmUsageAvoid": "Avoid – Hạn chế buổi tối",
+  "@filterOptionPmUsageAvoid": {
+    "description": "Option avoid cho filter pmUsage"
+  },
+  "filterOptionPmUsageOptional": "Optional – Tùy chọn",
+  "@filterOptionPmUsageOptional": {
+    "description": "Option optional cho filter pmUsage"
+  },
+  "filterOptionPmUsageCore": "Core – Nên dùng buổi tối",
+  "@filterOptionPmUsageCore": {
+    "description": "Option core cho filter pmUsage"
+  },
+  "description": "Mô tả",
+  "@description": {
+    "description": "Tiêu đề phần mô tả sản phẩm"
+  },
+  "usageInfo": "Thông tin sử dụng",
+  "@usageInfo": {
+    "description": "Tiêu đề phần thông tin sử dụng sản phẩm"
+  },
+  "keyActives": "Hoạt chất chính",
+  "@keyActives": {
+    "description": "Tiêu đề phần hoạt chất chính"
+  },
+  "highlightedIngredients": "Thành phần nổi bật",
+  "@highlightedIngredients": {
+    "description": "Tiêu đề phần thành phần nổi bật"
+  },
+  "detailedIngredientList": "Danh sách thành phần chi tiết",
+  "@detailedIngredientList": {
+    "description": "Tiêu đề phần danh sách thành phần chi tiết"
+  },
+  "phase": "Phase",
+  "@phase": {
+    "description": "Nhãn phase trong thông tin sử dụng"
+  },
+  "step": "Step",
+  "@step": {
+    "description": "Nhãn step trong thông tin sử dụng"
+  },
+  "amUsage": "AM Usage",
+  "@amUsage": {
+    "description": "Nhãn AM Usage trong thông tin sử dụng"
+  },
+  "pmUsage": "PM Usage",
+  "@pmUsage": {
+    "description": "Nhãn PM Usage trong thông tin sử dụng"
+  },
+  "frequency": "Frequency",
+  "@frequency": {
+    "description": "Nhãn Frequency trong thông tin sử dụng"
+  },
+  "addToRoutine": "Thêm vào Routine",
+  "@addToRoutine": {
+    "description": "Nút thêm sản phẩm vào routine"
+  },
+  "overview": "Tổng quan",
+  "@overview": {
+    "description": "Tab tổng quan sản phẩm"
+  },
+  "keyIngredients": "Thành phần chính",
+  "@keyIngredients": {
+    "description": "Tab thành phần chính"
+  },
+  "detailedIngredients": "Thành phần chi tiết",
+  "@detailedIngredients": {
+    "description": "Tab thành phần chi tiết"
+  },
+  "noDetailedIngredientInfo": "Không có thông tin thành phần chi tiết",
+  "@noDetailedIngredientInfo": {
+    "description": "Thông báo không có thông tin thành phần chi tiết"
+  },
+  "ingredient": "Thành phần",
+  "@ingredient": {
+    "description": "Nhãn thành phần"
+  },
+  "functions": "Chức năng",
+  "@functions": {
+    "description": "Nhãn chức năng của thành phần"
+  },
+  "irritancy": "Kích ứng",
+  "@irritancy": {
+    "description": "Nhãn mức độ kích ứng"
+  },
+  "comedogenicity": "Gây mụn",
+  "@comedogenicity": {
+    "description": "Nhãn mức độ gây mụn"
+  },
+  "alsoCalled": "Còn gọi là",
+  "@alsoCalled": {
+    "description": "Nhãn tên khác của thành phần"
+  },
+  "whatItDoes": "Chức năng:",
+  "@whatItDoes": {
+    "description": "Nhãn chức năng của thành phần (what it does)"
+  },
+  "noKeyIngredientInfo": "Không có thông tin thành phần chính",
+  "@noKeyIngredientInfo": {
+    "description": "Thông báo không có thông tin thành phần chính"
+  },
+  "activeIngredient": "Hoạt chất",
+  "@activeIngredient": {
+    "description": "Nhãn hoạt chất"
+  },
+  "routineManagement": "Quản lý Routine",
+  "@routineManagement": {
+    "description": "Tiêu đề trang quản lý routine"
+  },
+  "routineCalendar": "Lịch trình",
+  "@routineCalendar": {
+    "description": "Tiêu đề phần lịch"
+  },
+  "routineMonth": "Tháng",
+  "@routineMonth": {
+    "description": "Nhãn nút xem theo tháng"
+  },
+  "routineMonthYear": "Tháng {month}, {year}",
+  "@routineMonthYear": {
+    "description": "Hiển thị tháng và năm",
+    "placeholders": {
+      "month": {
+        "type": "int"
+      },
+      "year": {
+        "type": "int"
+      }
+    }
+  },
+  "routineMyRoutines": "Routine của tôi",
+  "@routineMyRoutines": {
+    "description": "Tiêu đề phần routine cá nhân"
+  },
+  "routineMorningCare": "Chăm sóc da buổi sáng",
+  "@routineMorningCare": {
+    "description": "Tên routine buổi sáng"
+  },
+  "routineEveningCare": "Routine cấp ẩm tối",
+  "@routineEveningCare": {
+    "description": "Tên routine buổi tối"
+  },
+  "routineStepsCount": "{count} bước",
+  "@routineStepsCount": {
+    "description": "Số bước trong routine",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "routineYourProgress": "Tiến độ của bạn",
+  "@routineYourProgress": {
+    "description": "Tiêu đề phần tiến độ"
+  },
+  "routineStreakDays": "Chuỗi ngày hoàn thành",
+  "@routineStreakDays": {
+    "description": "Nhãn chuỗi ngày hoàn thành"
+  },
+  "routineDaysCount": "{days} ngày",
+  "@routineDaysCount": {
+    "description": "Số ngày",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "routineProgressMessage": "Bạn đang làm rất tốt! Hoàn thành {completed}/{total} routine tuần này.",
+  "@routineProgressMessage": {
+    "description": "Thông điệp động lực về tiến độ",
+    "placeholders": {
+      "completed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "routineFeatured": "Routine nổi bật",
+  "@routineFeatured": {
+    "description": "Tiêu đề phần routine nổi bật"
+  },
+  "routineGlassSkin": "\"Glass Skin\" Routine",
+  "@routineGlassSkin": {
+    "description": "Tên routine Glass Skin"
+  },
+  "routineGlassSkinDesc": "Đạt được làn da căng bóng, rạng rỡ.",
+  "@routineGlassSkinDesc": {
+    "description": "Mô tả routine Glass Skin"
+  },
+  "routineRecommendationsFor": "Đề xuất cho da {skinType}",
+  "@routineRecommendationsFor": {
+    "description": "Tiêu đề phần đề xuất theo loại da",
+    "placeholders": {
+      "skinType": {
+        "type": "String"
+      }
+    }
+  },
+  "routineOilControl": "Kiểm soát dầu",
+  "@routineOilControl": {
+    "description": "Tên routine kiểm soát dầu"
+  },
+  "routinePoreCleansing": "Làm sạch lỗ chân lông",
+  "@routinePoreCleansing": {
+    "description": "Tên routine làm sạch lỗ chân lông"
+  },
+  "routineMonday": "T2",
+  "@routineMonday": {
+    "description": "Thứ 2 viết tắt"
+  },
+  "routineTuesday": "T3",
+  "@routineTuesday": {
+    "description": "Thứ 3 viết tắt"
+  },
+  "routineWednesday": "T4",
+  "@routineWednesday": {
+    "description": "Thứ 4 viết tắt"
+  },
+  "routineThursday": "T5",
+  "@routineThursday": {
+    "description": "Thứ 5 viết tắt"
+  },
+  "routineFriday": "T6",
+  "@routineFriday": {
+    "description": "Thứ 6 viết tắt"
+  },
+  "routineSaturday": "T7",
+  "@routineSaturday": {
+    "description": "Thứ 7 viết tắt"
+  },
+  "routineSunday": "CN",
+  "@routineSunday": {
+    "description": "Chủ nhật viết tắt"
+  },
+  "routinePlay": "Bắt đầu",
+  "@routinePlay": {
+    "description": "Nút bắt đầu routine"
+  },
+  "routineAddNew": "Thêm routine mới",
+  "@routineAddNew": {
+    "description": "Nút thêm routine mới"
+  },
+  "routineWeek": "Tuần",
+  "@routineWeek": {
+    "description": "Nhãn nút xem theo tuần"
+  },
+  "routineWeekRange": "{startDate} - {endDate} Tháng {month}",
+  "@routineWeekRange": {
+    "description": "Hiển thị khoảng thời gian tuần",
+    "placeholders": {
+      "startDate": {
+        "type": "int"
+      },
+      "endDate": {
+        "type": "int"
+      },
+      "month": {
+        "type": "int"
+      }
+    }
+  }
+}
