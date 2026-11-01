@@ -217,8 +217,6 @@ class SplashCubit extends Cubit<SplashState> {
   }
 
   PageRouteInfo _initialEchoRoute() {
-    return Storage.echoOnboardingCompleted
-        ? const MainRoute()
-        : const OnboardingLanguageRoute();
+    return const MainRoute();
   }
 }

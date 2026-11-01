@@ -47,7 +47,6 @@ class AppRouter extends RootStackRouter {
         AutoRoute(page: HomeRoute.page, path: Routers.homePage),
         AutoRoute(page: LibraryRoute.page, path: Routers.libraryPage),
         AutoRoute(page: PracticeRoute.page, path: Routers.practicePage),
-        AutoRoute(page: ProfileRoute.page, path: Routers.profilePage),
       ],
     ),
 

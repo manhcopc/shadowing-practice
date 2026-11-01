@@ -1,9 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/foundation.dart';
-import 'package:path_provider/path_provider.dart';
-import 'package:permission_handler/permission_handler.dart';
-import 'package:record/record.dart';
 
 import '../models/shadow_mvp_models.dart';
 import 'pacer_calculator.dart';
@@ -14,7 +11,7 @@ class PacerController extends ChangeNotifier {
     required this.passage,
     int initialWpm = PacerCalculator.defaultWpm,
     PacerMode initialMode = PacerMode.sentenceFocus,
-    this.enableAudioRecording = true,
+    this.enableAudioRecording = false,
   })  : _wpm = initialWpm,
         _mode = initialMode {
     _recalculateTimings();
@@ -22,7 +19,6 @@ class PacerController extends ChangeNotifier {
 
   final ShadowPassage passage;
   final bool enableAudioRecording;
-  AudioRecorder? _recorder;
   bool _isDisposed = false;
 
   int _wpm;
@@ -62,10 +58,22 @@ class PacerController extends ChangeNotifier {
   bool get isCountdown => _status == PacerStatus.countdown;
   bool get isIdle => _status == PacerStatus.idle;
 
-  PacerSentenceTiming get currentSentenceTiming => _timingPlan.sentenceTimings[_currentIndex];
+  PacerSentenceTiming get currentSentenceTiming =>
+      _timingPlan.sentenceTimings[_currentIndex];
   ShadowPassageSentence get currentSentence => currentSentenceTiming.sentence;
 
   int get totalSentences => passage.sentences.length;
+
+  /// Continuous progress (0.0 -> 1.0) across the entire passage.
+  double get overallProgress {
+    final totalMs = _timingPlan.totalDurationMs;
+    if (totalMs <= 0) return 0.0;
+    if (_status == PacerStatus.completed) return 1.0;
+    if (_status == PacerStatus.idle) return 0.0;
+    final currentStartMs = currentSentenceTiming.startMs;
+    final currentAbsoluteMs = currentStartMs + _sentenceElapsedMs;
+    return (currentAbsoluteMs / totalMs).clamp(0.0, 1.0);
+  }
 
   void _recalculateTimings() {
     _timingPlan = PacerCalculator.calculatePassageTiming(
@@ -77,95 +85,56 @@ class PacerController extends ChangeNotifier {
   void setMode(PacerMode newMode) {
     if (_mode == newMode) return;
     _mode = newMode;
-    notifyListeners();
+    if (_status == PacerStatus.completed) {
+      _status = PacerStatus.idle;
+      _currentIndex = 0;
+      _sentenceElapsedMs = 0;
+      _sentenceProgress = 0.0;
+    }
+    _safeNotifyListeners();
   }
 
   void toggleTranslation() {
     _showTranslation = !_showTranslation;
-    notifyListeners();
+    _safeNotifyListeners();
   }
 
   void setWpm(int newWpm) {
-    if (_wpm == newWpm) return;
-    _wpm = newWpm.clamp(PacerCalculator.minWpm, PacerCalculator.maxWpm);
+    final clamped = newWpm.clamp(PacerCalculator.minWpm, PacerCalculator.maxWpm);
+    if (_wpm == clamped) return;
+    _wpm = clamped;
     _recalculateTimings();
 
-    // Re-adjust sentence progress if running/paused
-    final curDuration = currentSentenceTiming.durationMs;
-    if (curDuration > 0) {
-      _sentenceProgress = (_sentenceElapsedMs / curDuration).clamp(0.0, 1.0);
+    if (_status == PacerStatus.completed) {
+      _status = PacerStatus.idle;
+      _currentIndex = 0;
+      _sentenceElapsedMs = 0;
+      _sentenceProgress = 0.0;
+    } else {
+      final curDuration = currentSentenceTiming.durationMs;
+      if (curDuration > 0) {
+        _sentenceProgress = (_sentenceElapsedMs / curDuration).clamp(0.0, 1.0);
+      }
     }
-    notifyListeners();
+    _safeNotifyListeners();
   }
 
-  /// Start practice with a 3-second countdown and audio recording.
+  /// Start practice immediately without countdown.
   Future<void> start() async {
-    _status = PacerStatus.countdown;
-    _countdownSeconds = 3;
+    _tickerTimer?.cancel();
+    _countdownTimer?.cancel();
     _currentIndex = 0;
     _sentenceElapsedMs = 0;
     _sentenceProgress = 0.0;
     _totalElapsedMs = 0;
     _errorMessage = null;
-    notifyListeners();
-
-    _countdownTimer?.cancel();
-    _countdownTimer = Timer.periodic(const Duration(seconds: 1), (timer) async {
-      _countdownSeconds--;
-      if (_countdownSeconds <= 0) {
-        timer.cancel();
-        await _beginPractice();
-      } else {
-        notifyListeners();
-      }
-    });
+    _beginPractice();
   }
 
-  Future<void> _beginPractice() async {
-    await _startRecording();
+  void _beginPractice() {
     _status = PacerStatus.running;
     _startTicker();
-    notifyListeners();
-  }
-
-  AudioRecorder _getRecorder() => _recorder ??= AudioRecorder();
-
-  Future<void> _startRecording() async {
-    if (!enableAudioRecording) return;
-    try {
-      final recorder = _getRecorder();
-      final status = await Permission.microphone.request();
-      final hasPermission = status.isGranted || await recorder.hasPermission();
-      if (!hasPermission) {
-        _errorMessage = 'Microphone permission not granted (practice will continue without voice capture).';
-        _safeNotifyListeners();
-        return;
-      }
-
-      final tempDir = await getTemporaryDirectory();
-      final path = '${tempDir.path}/pacer-${DateTime.now().millisecondsSinceEpoch}.m4a';
-      await recorder.start(
-        const RecordConfig(encoder: AudioEncoder.aacLc),
-        path: path,
-      );
-      _recordedAudioPath = path;
-    } catch (e) {
-      debugPrint('Recording error: $e');
-    }
-  }
-
-  Future<void> _stopRecording() async {
-    if (!enableAudioRecording || _recorder == null) return;
-    try {
-      if (await _recorder!.isRecording()) {
-        final path = await _recorder!.stop();
-        if (path != null) {
-          _recordedAudioPath = path;
-        }
-      }
-    } catch (e) {
-      debugPrint('Stop recording error: $e');
-    }
+    _safeNotifyListeners();
   }
 
   void _safeNotifyListeners() {
@@ -176,7 +145,7 @@ class PacerController extends ChangeNotifier {
 
   void _startTicker() {
     _tickerTimer?.cancel();
-    const intervalMs = 50; // Smooth 20fps ticker for progress bar
+    const intervalMs = 16; // ~60fps smooth ticker for continuous scroll & progress
     _tickerTimer = Timer.periodic(const Duration(milliseconds: intervalMs), (_) {
       if (_status != PacerStatus.running) return;
 
@@ -184,12 +153,13 @@ class PacerController extends ChangeNotifier {
       _totalElapsedMs += intervalMs;
 
       final currentTargetDuration = currentSentenceTiming.durationMs;
-      _sentenceProgress = (_sentenceElapsedMs / currentTargetDuration).clamp(0.0, 1.0);
+      _sentenceProgress =
+          (_sentenceElapsedMs / currentTargetDuration).clamp(0.0, 1.0);
 
       if (_sentenceElapsedMs >= currentTargetDuration) {
         _onSentenceFinished();
       } else {
-        notifyListeners();
+        _safeNotifyListeners();
       }
     });
   }
@@ -199,7 +169,7 @@ class PacerController extends ChangeNotifier {
       _currentIndex++;
       _sentenceElapsedMs = 0;
       _sentenceProgress = 0.0;
-      notifyListeners();
+      _safeNotifyListeners();
     } else {
       finish();
     }
@@ -209,9 +179,6 @@ class PacerController extends ChangeNotifier {
     if (_status != PacerStatus.running) return;
     _status = PacerStatus.paused;
     _tickerTimer?.cancel();
-    try {
-      _recorder?.pause();
-    } catch (_) {}
     _safeNotifyListeners();
   }
 
@@ -219,9 +186,6 @@ class PacerController extends ChangeNotifier {
     if (_status != PacerStatus.paused) return;
     _status = PacerStatus.running;
     _startTicker();
-    try {
-      _recorder?.resume();
-    } catch (_) {}
     _safeNotifyListeners();
   }
 
@@ -240,31 +204,41 @@ class PacerController extends ChangeNotifier {
       _currentIndex++;
       _sentenceElapsedMs = 0;
       _sentenceProgress = 0.0;
-      notifyListeners();
+      if (_status == PacerStatus.completed) {
+        _status = PacerStatus.idle;
+      }
+      _safeNotifyListeners();
     } else {
       finish();
     }
   }
 
   void previousSentence() {
+    if (_status == PacerStatus.completed) {
+      _status = PacerStatus.idle;
+    }
     if (_currentIndex > 0) {
       _currentIndex--;
       _sentenceElapsedMs = 0;
       _sentenceProgress = 0.0;
-      notifyListeners();
+      _safeNotifyListeners();
     } else {
       _sentenceElapsedMs = 0;
       _sentenceProgress = 0.0;
-      notifyListeners();
+      _safeNotifyListeners();
     }
   }
 
   void jumpToSentence(int index) {
     if (index < 0 || index >= totalSentences) return;
+    if (_currentIndex == index && _status != PacerStatus.completed) return;
+    if (_status == PacerStatus.completed) {
+      _status = PacerStatus.idle;
+    }
     _currentIndex = index;
     _sentenceElapsedMs = 0;
     _sentenceProgress = 0.0;
-    notifyListeners();
+    _safeNotifyListeners();
   }
 
   Future<void> finish() async {
@@ -272,7 +246,6 @@ class PacerController extends ChangeNotifier {
     _countdownTimer?.cancel();
     _status = PacerStatus.completed;
     _sentenceProgress = 1.0;
-    await _stopRecording();
     _safeNotifyListeners();
   }
 
@@ -285,7 +258,6 @@ class PacerController extends ChangeNotifier {
     _sentenceProgress = 0.0;
     _totalElapsedMs = 0;
     _countdownSeconds = 3;
-    await _stopRecording();
     _safeNotifyListeners();
   }
 
@@ -294,8 +266,6 @@ class PacerController extends ChangeNotifier {
     _isDisposed = true;
     _tickerTimer?.cancel();
     _countdownTimer?.cancel();
-    _stopRecording();
-    _recorder?.dispose();
     super.dispose();
   }
 }

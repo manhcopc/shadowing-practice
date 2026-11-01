@@ -23,7 +23,7 @@ class PacerControlsBar extends StatelessWidget {
         return Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            // Recording status badge
+            // Pacer running status badge
             if (isRunning || controller.isPaused) ...[
               Padding(
                 padding: const EdgeInsets.only(bottom: ShadowSpacing.sm),
@@ -34,16 +34,18 @@ class PacerControlsBar extends StatelessWidget {
                       width: 8,
                       height: 8,
                       decoration: BoxDecoration(
-                        color: isRunning ? Colors.redAccent : Colors.amber,
+                        color: isRunning ? ShadowColors.success : Colors.amber,
                         shape: BoxShape.circle,
                       ),
                     ),
                     const SizedBox(width: 6),
                     Text(
-                      isRunning ? 'ĐANG THU ÂM' : 'ĐANG TẠM DỪNG',
+                      isRunning ? 'ĐANG CHẠY NHỊP ĐỌC' : 'ĐANG TẠM DỪNG',
                       style: ShadowType.metadata.copyWith(
                         fontSize: 10,
-                        color: isRunning ? Colors.redAccent : ShadowColors.muted,
+                        color: isRunning
+                            ? ShadowColors.success
+                            : ShadowColors.muted,
                         letterSpacing: 1.0,
                       ),
                     ),
@@ -78,7 +80,9 @@ class PacerControlsBar extends StatelessWidget {
                     iconSize: 24,
                     color: ShadowColors.ink,
                     tooltip: 'Bắt đầu lại',
-                    onPressed: isIdle ? null : controller.reset,
+                    onPressed: (isIdle && controller.currentIndex == 0)
+                        ? null
+                        : controller.reset,
                   ),
 
                   // Previous sentence
@@ -87,7 +91,9 @@ class PacerControlsBar extends StatelessWidget {
                     iconSize: 28,
                     color: ShadowColors.ink,
                     tooltip: 'Câu trước',
-                    onPressed: isIdle ? null : controller.previousSentence,
+                    onPressed: controller.currentIndex > 0
+                        ? controller.previousSentence
+                        : null,
                   ),
 
                   // Big Center Action Button (Start / Pause / Resume)
@@ -110,8 +116,8 @@ class PacerControlsBar extends StatelessWidget {
                         isIdle || controller.isCompleted
                             ? Icons.play_arrow_rounded
                             : isRunning
-                                ? Icons.pause_rounded
-                                : Icons.play_arrow_rounded,
+                            ? Icons.pause_rounded
+                            : Icons.play_arrow_rounded,
                         color: ShadowColors.paper,
                         size: 34,
                       ),
@@ -124,16 +130,23 @@ class PacerControlsBar extends StatelessWidget {
                     iconSize: 28,
                     color: ShadowColors.ink,
                     tooltip: 'Câu tiếp theo',
-                    onPressed: isIdle ? null : controller.nextSentence,
+                    onPressed:
+                        controller.currentIndex < controller.totalSentences - 1
+                        ? controller.nextSentence
+                        : null,
                   ),
 
                   // Finish Button
                   IconButton(
                     icon: const Icon(Icons.check_circle_outline_rounded),
                     iconSize: 26,
-                    color: (isRunning || controller.isPaused) ? ShadowColors.success : ShadowColors.muted,
+                    color: (isRunning || controller.isPaused)
+                        ? ShadowColors.success
+                        : ShadowColors.muted,
                     tooltip: 'Hoàn thành',
-                    onPressed: (isRunning || controller.isPaused) ? onFinish : null,
+                    onPressed: (isRunning || controller.isPaused)
+                        ? onFinish
+                        : null,
                   ),
                 ],
               ),

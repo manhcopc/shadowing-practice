@@ -53,16 +53,26 @@ void main() {
       controller.dispose();
     });
 
-    test('setMode toggles between sentenceFocus and teleprompter', () {
+    test('setMode and setWpm reset completed status back to idle', () async {
       final passage = const ShadowPassageRepository().getFeaturedPassage();
       final controller = PacerController(
         passage: passage,
         enableAudioRecording: false,
       );
 
-      expect(controller.mode, equals(PacerMode.sentenceFocus));
+      await controller.finish();
+      expect(controller.isCompleted, isTrue);
+
       controller.setMode(PacerMode.teleprompter);
-      expect(controller.mode, equals(PacerMode.teleprompter));
+      expect(controller.isCompleted, isFalse);
+      expect(controller.isIdle, isTrue);
+
+      await controller.finish();
+      expect(controller.isCompleted, isTrue);
+
+      controller.setWpm(150);
+      expect(controller.isCompleted, isFalse);
+      expect(controller.isIdle, isTrue);
 
       controller.dispose();
     });
@@ -86,64 +96,79 @@ void main() {
   });
 
   group('PacerPracticePage Widget Tests', () {
-    testWidgets('renders WPM bar, controls, and active sentence in sentence mode', (tester) async {
-      tester.view.physicalSize = const Size(1080, 2400);
-      tester.view.devicePixelRatio = 1.0;
-      addTearDown(() => tester.view.resetPhysicalSize());
+    testWidgets(
+      'renders WPM bar, wheel picker sentences, and controls in sentence mode',
+      (tester) async {
+        tester.view.physicalSize = const Size(1080, 2400);
+        tester.view.devicePixelRatio = 1.0;
+        addTearDown(() => tester.view.resetPhysicalSize());
 
-      final passage = const ShadowPassageRepository().getFeaturedPassage();
+        final passage = const ShadowPassageRepository().getFeaturedPassage();
 
-      await tester.pumpWidget(
-        MaterialApp(
-          home: PacerPracticePage(
-            passageId: passage.id,
-            enableAudioRecording: false,
+        await tester.pumpWidget(
+          MaterialApp(
+            home: PacerPracticePage(
+              passageId: passage.id,
+              enableAudioRecording: false,
+            ),
           ),
-        ),
-      );
+        );
 
-      // Verify header and passage title
-      expect(find.text(passage.title), findsOneWidget);
+        // Verify header and passage title
+        expect(find.text(passage.title), findsOneWidget);
 
-      // Verify WPM bar components
-      expect(find.text('TỪNG CÂU'), findsOneWidget);
-      expect(find.text('CUỘN CHỮ'), findsOneWidget);
-      expect(find.text('WPM'), findsOneWidget);
+        // Verify WPM bar components
+        expect(find.text('TỪNG CÂU'), findsOneWidget);
+        expect(find.text('CUỘN CHỮ'), findsOneWidget);
+        expect(find.text('WPM'), findsOneWidget);
 
-      // Verify active first sentence text is rendered
-      expect(find.text(passage.sentences.first.text), findsOneWidget);
+        // Verify wheel picker is present and active sentence text is rendered
+        expect(find.byType(ListWheelScrollView), findsOneWidget);
+        expect(find.text(passage.sentences.first.text), findsOneWidget);
 
-      // Verify sentence counter: 01 / 03
-      expect(find.text('01'), findsOneWidget);
+        // Verify sentence counter: 01 / 03
+        expect(find.text('01'), findsOneWidget);
 
-      // Verify play button is present
-      expect(find.byIcon(Icons.play_arrow_rounded), findsOneWidget);
-    });
+        // Verify play button is present
+        expect(find.byIcon(Icons.play_arrow_rounded), findsOneWidget);
+      },
+    );
 
-    testWidgets('switching mode to teleprompter renders full sentence list', (tester) async {
-      tester.view.physicalSize = const Size(1080, 2400);
-      tester.view.devicePixelRatio = 1.0;
-      addTearDown(() => tester.view.resetPhysicalSize());
+    testWidgets(
+      'switching mode or speed does not prematurely show completion sheet',
+      (tester) async {
+        tester.view.physicalSize = const Size(1080, 2400);
+        tester.view.devicePixelRatio = 1.0;
+        addTearDown(() => tester.view.resetPhysicalSize());
 
-      final passage = const ShadowPassageRepository().getFeaturedPassage();
+        final passage = const ShadowPassageRepository().getFeaturedPassage();
 
-      await tester.pumpWidget(
-        MaterialApp(
-          home: PacerPracticePage(
-            passageId: passage.id,
-            enableAudioRecording: false,
+        await tester.pumpWidget(
+          MaterialApp(
+            home: PacerPracticePage(
+              passageId: passage.id,
+              enableAudioRecording: false,
+            ),
           ),
-        ),
-      );
+        );
 
-      // Tap on 'CUỘN CHỮ'
-      await tester.tap(find.text('CUỘN CHỮ'));
-      await tester.pumpAndSettle();
+        // Tap on 'CUỘN CHỮ'
+        await tester.tap(find.text('CUỘN CHỮ'));
+        await tester.pumpAndSettle();
 
-      // Verify that sentences in passage are visible in the teleprompter list
-      for (final s in passage.sentences) {
-        expect(find.text(s.text), findsWidgets);
-      }
-    });
+        expect(find.text('HOÀN THÀNH BÀI ĐỌC'), findsNothing);
+
+        // Verify that sentences in passage are visible in the continuous teleprompter
+        for (final s in passage.sentences) {
+          expect(find.text(s.text), findsWidgets);
+        }
+
+        // Tap speed preset 'Nhanh (150)'
+        await tester.tap(find.text('Nhanh (150)'));
+        await tester.pumpAndSettle();
+
+        expect(find.text('HOÀN THÀNH BÀI ĐỌC'), findsNothing);
+      },
+    );
   });
 }

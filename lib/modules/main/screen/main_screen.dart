@@ -6,8 +6,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../common/constants/constants.dart';
 import '../../../common/generated/assets.gen.dart';
 import '../../../core/app/app_router.dart';
-import '../../../core/services/rating_app/rating_app_controller.dart';
-import '../../../data/local/shared_prefs/storage.dart';
 
 @RoutePage()
 class MainScreen extends StatefulWidget {
@@ -19,38 +17,29 @@ class MainScreen extends StatefulWidget {
 
 class _MainScreenState extends State<MainScreen> {
   // Constants
-  static const Duration _ratingDialogDelay = Duration(milliseconds: 500);
   static const double _iconSize = 32.0;
   static const double _selectedLabelFontSize = 12.0;
   static const double _unselectedLabelFontSize = 10.0;
   static const int _unselectedIconAlpha = 150;
 
-  // Navigation configuration - mỗi item truyền iconAsset (SVG) HOẶC iconData (Flutter)
+  // Navigation configuration - ẩn tab Profile chưa cần dùng
   static final List<_NavigationItem> _navigationItems = [
     _NavigationItem(
       index: 0,
       label: AppConstants.titleHome,
       iconAsset: Assets.icons.icHome,
     ),
-    _NavigationItem(
+    const _NavigationItem(
       index: 1,
       label: 'Library',
       iconData: Icons.menu_book_rounded,
     ),
-    _NavigationItem(index: 2, label: 'Practice', iconData: Icons.mic_rounded),
-    _NavigationItem(
-      index: 3,
-      label: AppConstants.titleProfile,
-      iconData: Icons.person_rounded,
+    const _NavigationItem(
+      index: 2,
+      label: 'Practice',
+      iconData: Icons.play_lesson_rounded,
     ),
   ];
-
-  @override
-  void initState() {
-    super.initState();
-    _initializeCubits();
-    _checkAndShowRatingDialog();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -59,25 +48,9 @@ class _MainScreenState extends State<MainScreen> {
         HomeRoute(),
         LibraryRoute(),
         PracticeRoute(),
-        ProfileRoute(),
       ],
       bottomNavigationBuilder: _buildBottomNavigationBar,
     );
-  }
-
-  // Private Methods
-
-  Future<void> _initializeCubits() async {}
-
-  void _checkAndShowRatingDialog() {
-    if (!Storage.isSecondLaunch) return;
-
-    Future.delayed(_ratingDialogDelay, () async {
-      if (mounted) {
-        final rateController = RateAppController(context);
-        await rateController.showRateDialog();
-      }
-    });
   }
 
   Widget _buildBottomNavigationBar(

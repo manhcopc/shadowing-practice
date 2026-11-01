@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../design/shadow_design_tokens.dart';
+import '../pacer_calculator.dart';
 import '../pacer_controller.dart';
 
 class TeleprompterView extends StatefulWidget {
@@ -16,55 +17,40 @@ class TeleprompterView extends StatefulWidget {
 
 class _TeleprompterViewState extends State<TeleprompterView> {
   final ScrollController _scrollController = ScrollController();
-  final List<GlobalKey> _sentenceKeys = [];
-  int _lastIndex = -1;
 
   @override
   void initState() {
     super.initState();
-    _initKeys();
-    widget.controller.addListener(_onControllerUpdate);
-  }
-
-  void _initKeys() {
-    _sentenceKeys.clear();
-    for (int i = 0; i < widget.controller.totalSentences; i++) {
-      _sentenceKeys.add(GlobalKey());
-    }
+    widget.controller.addListener(_syncContinuousScroll);
   }
 
   @override
   void didUpdateWidget(covariant TeleprompterView oldWidget) {
     super.didUpdateWidget(oldWidget);
-    if (oldWidget.controller.totalSentences != widget.controller.totalSentences) {
-      _initKeys();
+    if (oldWidget.controller != widget.controller) {
+      oldWidget.controller.removeListener(_syncContinuousScroll);
+      widget.controller.addListener(_syncContinuousScroll);
     }
   }
 
-  void _onControllerUpdate() {
-    final curIndex = widget.controller.currentIndex;
-    if (curIndex != _lastIndex && curIndex >= 0 && curIndex < _sentenceKeys.length) {
-      _lastIndex = curIndex;
-      WidgetsBinding.instance.addPostFrameCallback((_) => _scrollToActive(curIndex));
-    }
-  }
+  void _syncContinuousScroll() {
+    if (!mounted || !_scrollController.hasClients) return;
+    final position = _scrollController.position;
+    if (!position.hasContentDimensions) return;
 
-  void _scrollToActive(int index) {
-    if (!mounted || index < 0 || index >= _sentenceKeys.length) return;
-    final context = _sentenceKeys[index].currentContext;
-    if (context != null) {
-      Scrollable.ensureVisible(
-        context,
-        duration: const Duration(milliseconds: 400),
-        curve: Curves.easeInOut,
-        alignment: 0.35, // Position near 1/3 from top
-      );
+    final maxExtent = position.maxScrollExtent;
+    if (maxExtent <= 0) return;
+
+    final targetOffset =
+        (widget.controller.overallProgress * maxExtent).clamp(0.0, maxExtent);
+    if ((position.pixels - targetOffset).abs() > 0.5) {
+      _scrollController.jumpTo(targetOffset);
     }
   }
 
   @override
   void dispose() {
-    widget.controller.removeListener(_onControllerUpdate);
+    widget.controller.removeListener(_syncContinuousScroll);
     _scrollController.dispose();
     super.dispose();
   }
@@ -75,127 +61,230 @@ class _TeleprompterViewState extends State<TeleprompterView> {
       animation: widget.controller,
       builder: (context, _) {
         final sentences = widget.controller.passage.sentences;
+        final totalMs = widget.controller.timingPlan.totalDurationMs;
+        final remainingTotalMs =
+            (totalMs * (1.0 - widget.controller.overallProgress)).round();
 
         return Container(
+          width: double.infinity,
           decoration: BoxDecoration(
             color: ShadowColors.paper,
             borderRadius: const BorderRadius.all(ShadowRadius.lg),
             border: Border.all(color: ShadowColors.divider),
           ),
-          child: ClipRRect(
-            borderRadius: const BorderRadius.all(ShadowRadius.lg),
-            child: ListView.separated(
-              controller: _scrollController,
-              padding: const EdgeInsets.symmetric(
-                horizontal: ShadowSpacing.lg,
-                vertical: ShadowSpacing.xl,
-              ),
-              itemCount: sentences.length,
-              separatorBuilder: (context, index) => const SizedBox(height: ShadowSpacing.xl),
-              itemBuilder: (context, index) {
-                final sentence = sentences[index];
-                final isActive = index == widget.controller.currentIndex;
-                final isPassed = index < widget.controller.currentIndex;
-
-                return InkWell(
-                  key: _sentenceKeys[index],
-                  borderRadius: const BorderRadius.all(ShadowRadius.md),
-                  onTap: () => widget.controller.jumpToSentence(index),
-                  child: AnimatedContainer(
-                    duration: const Duration(milliseconds: 300),
-                    padding: const EdgeInsets.all(ShadowSpacing.md),
-                    decoration: BoxDecoration(
-                      color: isActive ? ShadowColors.faint : Colors.transparent,
-                      borderRadius: const BorderRadius.all(ShadowRadius.md),
-                      border: Border.all(
-                        color: isActive ? ShadowColors.ink : Colors.transparent,
-                        width: 1.5,
+          child: Column(
+            children: [
+              // Top bar: Continuous mode label, remaining total time, translation toggle
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: ShadowSpacing.lg,
+                  vertical: ShadowSpacing.sm,
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'CUỘN LIÊN TỤC · ${(widget.controller.overallProgress * 100).round()}%',
+                      style: ShadowType.metadata.copyWith(
+                        color: ShadowColors.muted,
+                        fontSize: 10,
                       ),
                     ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                    Row(
                       children: [
-                        // Sentence Number + Active Badge
-                        Row(
-                          children: [
-                            Text(
-                              (index + 1).toString().padLeft(2, '0'),
-                              style: ShadowType.metadata.copyWith(
-                                color: isActive ? ShadowColors.ink : ShadowColors.muted,
-                                fontWeight: isActive ? FontWeight.w900 : FontWeight.w500,
-                              ),
-                            ),
-                            if (isActive && widget.controller.isRunning) ...[
-                              const SizedBox(width: ShadowSpacing.sm),
-                              Container(
-                                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                                decoration: const BoxDecoration(
-                                  color: ShadowColors.cta,
-                                  borderRadius: BorderRadius.all(ShadowRadius.sm),
-                                ),
-                                child: Text(
-                                  'ĐANG ĐỌC',
-                                  style: ShadowType.metadata.copyWith(
-                                    color: ShadowColors.paper,
-                                    fontSize: 9,
-                                    letterSpacing: 0.8,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ],
+                        Icon(
+                          Icons.timer_outlined,
+                          size: 14,
+                          color: widget.controller.isRunning
+                              ? ShadowColors.warning
+                              : ShadowColors.muted,
                         ),
-                        const SizedBox(height: ShadowSpacing.sm),
-
-                        // Sentence Text
+                        const SizedBox(width: 4),
                         Text(
-                          sentence.text,
-                          style: ShadowType.displayMedium.copyWith(
-                            fontSize: 22,
-                            height: 1.35,
-                            color: isActive
+                          PacerCalculator.formatDurationMs(remainingTotalMs),
+                          style: ShadowType.metadata.copyWith(
+                            fontWeight: FontWeight.w700,
+                            color: widget.controller.isRunning
                                 ? ShadowColors.ink
-                                : isPassed
-                                    ? ShadowColors.muted.withValues(alpha: 0.6)
-                                    : ShadowColors.graphite.withValues(alpha: 0.35),
-                            fontWeight: isActive ? FontWeight.w700 : FontWeight.w400,
+                                : ShadowColors.muted,
                           ),
                         ),
-
-                        // Translation
-                        if (widget.controller.showTranslation) ...[
-                          const SizedBox(height: ShadowSpacing.xs),
-                          Text(
-                            sentence.translation,
-                            style: ShadowType.body.copyWith(
-                              fontSize: 14,
-                              color: isActive
-                                  ? ShadowColors.graphite
-                                  : ShadowColors.muted.withValues(alpha: 0.4),
-                              fontStyle: FontStyle.italic,
-                            ),
+                        const SizedBox(width: ShadowSpacing.sm),
+                        IconButton(
+                          icon: Icon(
+                            widget.controller.showTranslation
+                                ? Icons.translate_rounded
+                                : Icons.visibility_off_outlined,
+                            size: 18,
                           ),
-                        ],
-
-                        // Progress line for the active sentence
-                        if (isActive) ...[
-                          const SizedBox(height: ShadowSpacing.sm),
-                          ClipRRect(
-                            borderRadius: const BorderRadius.all(Radius.circular(2)),
-                            child: LinearProgressIndicator(
-                              value: widget.controller.sentenceProgress,
-                              minHeight: 3,
-                              backgroundColor: ShadowColors.divider,
-                              valueColor: const AlwaysStoppedAnimation<Color>(ShadowColors.ink),
-                            ),
-                          ),
-                        ],
+                          color: widget.controller.showTranslation
+                              ? ShadowColors.ink
+                              : ShadowColors.muted,
+                          tooltip: widget.controller.showTranslation
+                              ? 'Ẩn bản dịch'
+                              : 'Hiện bản dịch',
+                          onPressed: widget.controller.toggleTranslation,
+                          visualDensity: VisualDensity.compact,
+                        ),
                       ],
                     ),
+                  ],
+                ),
+              ),
+              const Divider(height: 1, color: ShadowColors.faint),
+
+              // Continuous Scrolling Text Area
+              Expanded(
+                child: LayoutBuilder(
+                  builder: (context, constraints) {
+                    final viewportHeight = constraints.maxHeight;
+                    final topLeadHeight = viewportHeight * 0.26;
+                    final bottomTrailHeight = viewportHeight * 0.74;
+
+                    return Stack(
+                      children: [
+                        // Subtle Eye-level Reading Guide Line
+                        Positioned(
+                          top: topLeadHeight,
+                          left: 0,
+                          right: 0,
+                          child: IgnorePointer(
+                            child: Row(
+                              children: [
+                                Container(
+                                  width: 10,
+                                  height: 2,
+                                  color: ShadowColors.ink.withValues(alpha: 0.35),
+                                ),
+                                Expanded(
+                                  child: Container(
+                                    height: 1,
+                                    color: ShadowColors.divider.withValues(
+                                      alpha: 0.45,
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  width: 10,
+                                  height: 2,
+                                  color: ShadowColors.ink.withValues(alpha: 0.35),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+
+                        // Continuous borderless text stream
+                        SingleChildScrollView(
+                          controller: _scrollController,
+                          padding: EdgeInsets.fromLTRB(
+                            ShadowSpacing.xl,
+                            topLeadHeight,
+                            ShadowSpacing.xl,
+                            bottomTrailHeight,
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              for (int i = 0; i < sentences.length; i++)
+                                GestureDetector(
+                                  behavior: HitTestBehavior.opaque,
+                                  onTap: () =>
+                                      widget.controller.jumpToSentence(i),
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(
+                                      bottom: ShadowSpacing.lg,
+                                    ),
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          sentences[i].text,
+                                          style: ShadowType.displayMedium
+                                              .copyWith(
+                                                fontSize: 25,
+                                                height: 1.48,
+                                                fontWeight:
+                                                    i ==
+                                                        widget
+                                                            .controller
+                                                            .currentIndex
+                                                    ? FontWeight.w700
+                                                    : FontWeight.w400,
+                                                color:
+                                                    i ==
+                                                        widget
+                                                            .controller
+                                                            .currentIndex
+                                                    ? ShadowColors.ink
+                                                    : i <
+                                                          widget
+                                                              .controller
+                                                              .currentIndex
+                                                    ? ShadowColors.muted
+                                                          .withValues(
+                                                            alpha: 0.45,
+                                                          )
+                                                    : ShadowColors.graphite
+                                                          .withValues(
+                                                            alpha: 0.78,
+                                                          ),
+                                              ),
+                                        ),
+                                        if (widget
+                                            .controller
+                                            .showTranslation) ...[
+                                          const SizedBox(height: 4),
+                                          Text(
+                                            sentences[i].translation,
+                                            style: ShadowType.body.copyWith(
+                                              fontSize: 14,
+                                              height: 1.4,
+                                              fontStyle: FontStyle.italic,
+                                              color:
+                                                  i ==
+                                                      widget
+                                                          .controller
+                                                          .currentIndex
+                                                  ? ShadowColors.muted
+                                                  : ShadowColors.muted
+                                                        .withValues(
+                                                          alpha: 0.45,
+                                                        ),
+                                            ),
+                                          ),
+                                        ],
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    );
+                  },
+                ),
+              ),
+
+              // Continuous overall progress bar at bottom
+              ClipRRect(
+                borderRadius: const BorderRadius.vertical(
+                  bottom: ShadowRadius.lg,
+                ),
+                child: LinearProgressIndicator(
+                  value: widget.controller.overallProgress,
+                  minHeight: 5,
+                  backgroundColor: ShadowColors.faint,
+                  valueColor: AlwaysStoppedAnimation<Color>(
+                    widget.controller.isRunning
+                        ? ShadowColors.ink
+                        : ShadowColors.divider,
                   ),
-                );
-              },
-            ),
+                ),
+              ),
+            ],
           ),
         );
       },
