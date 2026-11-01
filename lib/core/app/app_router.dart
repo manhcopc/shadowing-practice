@@ -16,6 +16,7 @@ import '../../modules/lessons/lesson_player_page.dart';
 import '../../modules/results/result_page.dart';
 import '../../modules/settings/screen/settings_screen.dart';
 import '../../modules/shadowing/shadowing_page.dart';
+import '../../modules/shadow_mvp/presentation/pacer_practice_page.dart';
 
 import '../../modules/splash/presentation/splash_screen.dart';
 import '../../modules/main/screen/main_screen.dart';
@@ -59,6 +60,7 @@ class AppRouter extends RootStackRouter {
     AutoRoute(page: CourseDetailRoute.page, path: Routers.courseDetail),
     AutoRoute(page: LessonPlayerRoute.page, path: Routers.lessonPlayer),
     AutoRoute(page: ShadowingRoute.page, path: Routers.shadowing),
+    AutoRoute(page: PacerPracticeRoute.page, path: Routers.pacerPractice),
     AutoRoute(page: ResultRoute.page, path: Routers.result),
     AutoRoute(page: SettingsRoute.page, path: Routers.settingsScreen),
   ];

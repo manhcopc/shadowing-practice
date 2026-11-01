@@ -31,11 +31,12 @@ void main() {
     expect(find.text('MOTIVATION'), findsWidgets);
   });
 
-  testWidgets('practice page renders shell state', (tester) async {
+  testWidgets('practice page renders pacer room state', (tester) async {
     await tester.pumpWidget(const MaterialApp(home: PracticePage()));
 
     expect(find.text('Practice'), findsWidgets);
-    expect(find.text('PLAYER SHELL'), findsOneWidget);
-    expect(find.text('No review queue yet'), findsOneWidget);
+    expect(find.text('SHADOW PACER ENGINE'), findsOneWidget);
+    expect(find.text('Practice Room'), findsOneWidget);
+    expect(find.text('START SHADOWING'), findsOneWidget);
   });
 }

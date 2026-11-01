@@ -265,6 +265,53 @@ class OnboardingLevelRouteArgs {
 }
 
 /// generated route for
+/// [PacerPracticePage]
+class PacerPracticeRoute extends PageRouteInfo<PacerPracticeRouteArgs> {
+  PacerPracticeRoute({
+    Key? key,
+    required String passageId,
+    List<PageRouteInfo>? children,
+  }) : super(
+         PacerPracticeRoute.name,
+         args: PacerPracticeRouteArgs(key: key, passageId: passageId),
+         initialChildren: children,
+       );
+
+  static const String name = 'PacerPracticeRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      final args = data.argsAs<PacerPracticeRouteArgs>();
+      return PacerPracticePage(key: args.key, passageId: args.passageId);
+    },
+  );
+}
+
+class PacerPracticeRouteArgs {
+  const PacerPracticeRouteArgs({this.key, required this.passageId});
+
+  final Key? key;
+
+  final String passageId;
+
+  @override
+  String toString() {
+    return 'PacerPracticeRouteArgs{key: $key, passageId: $passageId}';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+    if (other is! PacerPracticeRouteArgs) return false;
+    return key == other.key && passageId == other.passageId;
+  }
+
+  @override
+  int get hashCode => key.hashCode ^ passageId.hashCode;
+}
+
+/// generated route for
 /// [PracticePage]
 class PracticeRoute extends PageRouteInfo<void> {
   const PracticeRoute({List<PageRouteInfo>? children})

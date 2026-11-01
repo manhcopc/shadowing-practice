@@ -37,6 +37,8 @@ class Routers {
 
   static const shadowing = '/shadow/:sentenceId';
 
+  static const pacerPractice = '/pacer/:passageId';
+
   static const result = '/result/:sentenceId';
 
   ///[settingsScreen] screen route.

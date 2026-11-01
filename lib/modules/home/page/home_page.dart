@@ -98,13 +98,15 @@ class HomePage extends StatelessWidget {
                   onPressed: () => context.router.push(const LibraryRoute()),
                 ),
                 const SizedBox(height: ShadowSpacing.md),
-                const _PathTile(
+                _PathTile(
                   index: '03',
                   title: 'Shadow with the transcript',
                   body:
-                      'The running transcript and player arrive in the next commits.',
-                  actionLabel: 'COMING NEXT',
-                  onPressed: null,
+                      'Follow the paced running text and repeat to build your rhythm.',
+                  actionLabel: 'START SHADOWING',
+                  onPressed: () => context.router.push(
+                    PacerPracticeRoute(passageId: featured.id),
+                  ),
                 ),
               ],
             ),
@@ -142,9 +144,34 @@ class _TodayPanel extends StatelessWidget {
             ],
           ),
           const SizedBox(height: ShadowSpacing.lg),
-          ShadowCtaButton(
-            label: 'Open Library',
-            onPressed: () => context.router.push(const LibraryRoute()),
+          Row(
+            children: [
+              Expanded(
+                child: ShadowCtaButton(
+                  label: 'Practice now',
+                  onPressed: () => context.router.push(
+                    PacerPracticeRoute(passageId: passage.id),
+                  ),
+                ),
+              ),
+              const SizedBox(width: ShadowSpacing.sm),
+              Expanded(
+                child: OutlinedButton(
+                  onPressed: () => context.router.push(const LibraryRoute()),
+                  style: OutlinedButton.styleFrom(
+                    minimumSize: const Size.fromHeight(52),
+                    side: const BorderSide(color: ShadowColors.divider),
+                    shape: const RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(ShadowRadius.sm),
+                    ),
+                  ),
+                  child: Text(
+                    'LIBRARY',
+                    style: ShadowType.metadata.copyWith(color: ShadowColors.ink),
+                  ),
+                ),
+              ),
+            ],
           ),
         ],
       ),

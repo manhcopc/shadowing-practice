@@ -1,6 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 
+import '../../core/app/app_router.dart';
 import '../shadow_mvp/shadow_mvp.dart';
 
 @RoutePage()
@@ -117,6 +118,13 @@ class _FeaturedPassage extends StatelessWidget {
           Text(passage.transcript, style: ShadowType.body),
           const SizedBox(height: ShadowSpacing.lg),
           _PassageMeta(passage: passage),
+          const SizedBox(height: ShadowSpacing.lg),
+          ShadowCtaButton(
+            label: 'Practice Featured Drill',
+            onPressed: () => context.router.push(
+              PacerPracticeRoute(passageId: passage.id),
+            ),
+          ),
         ],
       ),
     );
@@ -231,13 +239,9 @@ class _PassageTile extends StatelessWidget {
           const SizedBox(height: ShadowSpacing.md),
           ShadowCtaButton(
             label: 'Practice',
-            onPressed: () {
-              ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(
-                  content: Text('Shadow Player arrives in Commit 4.'),
-                ),
-              );
-            },
+            onPressed: () => context.router.push(
+              PacerPracticeRoute(passageId: passage.id),
+            ),
           ),
         ],
       ),
